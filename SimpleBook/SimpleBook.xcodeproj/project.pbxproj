@@ -23,6 +23,11 @@
 		50B1C7BE169974700096BF93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7961699746F0096BF93 /* Foundation.framework */; };
 		50B1C7C6169974700096BF93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50B1C7C4169974700096BF93 /* InfoPlist.strings */; };
 		50B1C7C9169974700096BF93 /* SimpleBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B1C7C8169974700096BF93 /* SimpleBookTests.m */; };
+		50B1C7E516997D850096BF93 /* libluajit2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7E416997D850096BF93 /* libluajit2.a */; };
+		50B1C7E7169982720096BF93 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 50B1C7E6169982720096BF93 /* data */; };
+		50B1C7E916998B5D0096BF93 /* TestString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50B1C7E816998B5D0096BF93 /* TestString.strings */; };
+		50B1C7EB169990C10096BF93 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7EA169990C10096BF93 /* Security.framework */; };
+		50B1C7ED169990CD0096BF93 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7EC169990CD0096BF93 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,17 @@
 		50B1C7C5169974700096BF93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50B1C7C7169974700096BF93 /* SimpleBookTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleBookTests.h; sourceTree = "<group>"; };
 		50B1C7C8169974700096BF93 /* SimpleBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleBookTests.m; sourceTree = "<group>"; };
+		50B1C7DD16997D850096BF93 /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
+		50B1C7DE16997D850096BF93 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
+		50B1C7DF16997D850096BF93 /* lua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua.hpp; sourceTree = "<group>"; };
+		50B1C7E016997D850096BF93 /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
+		50B1C7E116997D850096BF93 /* luajit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luajit.h; sourceTree = "<group>"; };
+		50B1C7E216997D850096BF93 /* lualib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lualib.h; sourceTree = "<group>"; };
+		50B1C7E416997D850096BF93 /* libluajit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libluajit2.a; sourceTree = "<group>"; };
+		50B1C7E6169982720096BF93 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		50B1C7E816998B5D0096BF93 /* TestString.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TestString.strings; sourceTree = "<group>"; };
+		50B1C7EA169990C10096BF93 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		50B1C7EC169990CD0096BF93 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +83,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B1C7ED169990CD0096BF93 /* CoreFoundation.framework in Frameworks */,
+				50B1C7EB169990C10096BF93 /* Security.framework in Frameworks */,
 				50B1C7951699746F0096BF93 /* UIKit.framework in Frameworks */,
 				50B1C7971699746F0096BF93 /* Foundation.framework in Frameworks */,
 				50B1C7991699746F0096BF93 /* CoreGraphics.framework in Frameworks */,
+				50B1C7E516997D850096BF93 /* libluajit2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +108,11 @@
 		50B1C7851699746F0096BF93 = {
 			isa = PBXGroup;
 			children = (
+				50B1C7EC169990CD0096BF93 /* CoreFoundation.framework */,
+				50B1C7EA169990C10096BF93 /* Security.framework */,
+				50B1C7E816998B5D0096BF93 /* TestString.strings */,
+				50B1C7E6169982720096BF93 /* data */,
+				50B1C7DB16997D850096BF93 /* 3rd */,
 				50B1C79A1699746F0096BF93 /* SimpleBook */,
 				50B1C7C1169974700096BF93 /* SimpleBookTests */,
 				50B1C7931699746F0096BF93 /* Frameworks */,
@@ -162,6 +186,37 @@
 				50B1C7C4169974700096BF93 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50B1C7DB16997D850096BF93 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				50B1C7DC16997D850096BF93 /* include */,
+				50B1C7E316997D850096BF93 /* lib */,
+			);
+			name = 3rd;
+			path = ../3rd;
+			sourceTree = "<group>";
+		};
+		50B1C7DC16997D850096BF93 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				50B1C7DD16997D850096BF93 /* lauxlib.h */,
+				50B1C7DE16997D850096BF93 /* lua.h */,
+				50B1C7DF16997D850096BF93 /* lua.hpp */,
+				50B1C7E016997D850096BF93 /* luaconf.h */,
+				50B1C7E116997D850096BF93 /* luajit.h */,
+				50B1C7E216997D850096BF93 /* lualib.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		50B1C7E316997D850096BF93 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				50B1C7E416997D850096BF93 /* libluajit2.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +293,8 @@
 				50B1C79F1699746F0096BF93 /* InfoPlist.strings in Resources */,
 				50B1C7B11699746F0096BF93 /* MainStoryboard_iPhone.storyboard in Resources */,
 				50B1C7B41699746F0096BF93 /* MainStoryboard_iPad.storyboard in Resources */,
+				50B1C7E7169982720096BF93 /* data in Resources */,
+				50B1C7E916998B5D0096BF93 /* TestString.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +444,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleBook/SimpleBook-Prefix.pch";
 				INFOPLIST_FILE = "SimpleBook/SimpleBook-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../3rd/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -398,6 +459,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleBook/SimpleBook-Prefix.pch";
 				INFOPLIST_FILE = "SimpleBook/SimpleBook-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../3rd/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
