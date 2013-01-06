@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50B1C7951699746F0096BF93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7941699746F0096BF93 /* UIKit.framework */; };
+		50B1C7971699746F0096BF93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7961699746F0096BF93 /* Foundation.framework */; };
+		50B1C7991699746F0096BF93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7981699746F0096BF93 /* CoreGraphics.framework */; };
+		50B1C79F1699746F0096BF93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50B1C79D1699746F0096BF93 /* InfoPlist.strings */; };
+		50B1C7A11699746F0096BF93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B1C7A01699746F0096BF93 /* main.m */; };
+		50B1C7A51699746F0096BF93 /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B1C7A41699746F0096BF93 /* SBAppDelegate.m */; };
+		50B1C7A81699746F0096BF93 /* SBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B1C7A71699746F0096BF93 /* SBRootViewController.m */; };
+		50B1C7AB1699746F0096BF93 /* SBDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B1C7AA1699746F0096BF93 /* SBDataViewController.m */; };
+		50B1C7AE1699746F0096BF93 /* SBModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B1C7AD1699746F0096BF93 /* SBModelController.m */; };
+		50B1C7B11699746F0096BF93 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B1C7AF1699746F0096BF93 /* MainStoryboard_iPhone.storyboard */; };
+		50B1C7B41699746F0096BF93 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B1C7B21699746F0096BF93 /* MainStoryboard_iPad.storyboard */; };
+		50B1C7BC169974700096BF93 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7BB169974700096BF93 /* SenTestingKit.framework */; };
+		50B1C7BD169974700096BF93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7941699746F0096BF93 /* UIKit.framework */; };
+		50B1C7BE169974700096BF93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7961699746F0096BF93 /* Foundation.framework */; };
+		50B1C7C6169974700096BF93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50B1C7C4169974700096BF93 /* InfoPlist.strings */; };
+		50B1C7C9169974700096BF93 /* SimpleBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B1C7C8169974700096BF93 /* SimpleBookTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50B1C7BF169974700096BF93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50B1C7871699746F0096BF93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50B1C78F1699746F0096BF93;
+			remoteInfo = SimpleBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50B1C7901699746F0096BF93 /* SimpleBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B1C7941699746F0096BF93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		50B1C7961699746F0096BF93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		50B1C7981699746F0096BF93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		50B1C79C1699746F0096BF93 /* SimpleBook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleBook-Info.plist"; sourceTree = "<group>"; };
+		50B1C79E1699746F0096BF93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50B1C7A01699746F0096BF93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50B1C7A21699746F0096BF93 /* SimpleBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleBook-Prefix.pch"; sourceTree = "<group>"; };
+		50B1C7A31699746F0096BF93 /* SBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAppDelegate.h; sourceTree = "<group>"; };
+		50B1C7A41699746F0096BF93 /* SBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAppDelegate.m; sourceTree = "<group>"; };
+		50B1C7A61699746F0096BF93 /* SBRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBRootViewController.h; sourceTree = "<group>"; };
+		50B1C7A71699746F0096BF93 /* SBRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBRootViewController.m; sourceTree = "<group>"; };
+		50B1C7A91699746F0096BF93 /* SBDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBDataViewController.h; sourceTree = "<group>"; };
+		50B1C7AA1699746F0096BF93 /* SBDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBDataViewController.m; sourceTree = "<group>"; };
+		50B1C7AC1699746F0096BF93 /* SBModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBModelController.h; sourceTree = "<group>"; };
+		50B1C7AD1699746F0096BF93 /* SBModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBModelController.m; sourceTree = "<group>"; };
+		50B1C7B01699746F0096BF93 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		50B1C7B31699746F0096BF93 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		50B1C7BA169974700096BF93 /* SimpleBookTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBookTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B1C7BB169974700096BF93 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		50B1C7C3169974700096BF93 /* SimpleBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleBookTests-Info.plist"; sourceTree = "<group>"; };
+		50B1C7C5169974700096BF93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50B1C7C7169974700096BF93 /* SimpleBookTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleBookTests.h; sourceTree = "<group>"; };
+		50B1C7C8169974700096BF93 /* SimpleBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleBookTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50B1C78D1699746F0096BF93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B1C7951699746F0096BF93 /* UIKit.framework in Frameworks */,
+				50B1C7971699746F0096BF93 /* Foundation.framework in Frameworks */,
+				50B1C7991699746F0096BF93 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B1C7B6169974700096BF93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B1C7BC169974700096BF93 /* SenTestingKit.framework in Frameworks */,
+				50B1C7BD169974700096BF93 /* UIKit.framework in Frameworks */,
+				50B1C7BE169974700096BF93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50B1C7851699746F0096BF93 = {
+			isa = PBXGroup;
+			children = (
+				50B1C79A1699746F0096BF93 /* SimpleBook */,
+				50B1C7C1169974700096BF93 /* SimpleBookTests */,
+				50B1C7931699746F0096BF93 /* Frameworks */,
+				50B1C7911699746F0096BF93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50B1C7911699746F0096BF93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50B1C7901699746F0096BF93 /* SimpleBook.app */,
+				50B1C7BA169974700096BF93 /* SimpleBookTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50B1C7931699746F0096BF93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50B1C7941699746F0096BF93 /* UIKit.framework */,
+				50B1C7961699746F0096BF93 /* Foundation.framework */,
+				50B1C7981699746F0096BF93 /* CoreGraphics.framework */,
+				50B1C7BB169974700096BF93 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50B1C79A1699746F0096BF93 /* SimpleBook */ = {
+			isa = PBXGroup;
+			children = (
+				50B1C7A31699746F0096BF93 /* SBAppDelegate.h */,
+				50B1C7A41699746F0096BF93 /* SBAppDelegate.m */,
+				50B1C7A61699746F0096BF93 /* SBRootViewController.h */,
+				50B1C7A71699746F0096BF93 /* SBRootViewController.m */,
+				50B1C7A91699746F0096BF93 /* SBDataViewController.h */,
+				50B1C7AA1699746F0096BF93 /* SBDataViewController.m */,
+				50B1C7AC1699746F0096BF93 /* SBModelController.h */,
+				50B1C7AD1699746F0096BF93 /* SBModelController.m */,
+				50B1C7AF1699746F0096BF93 /* MainStoryboard_iPhone.storyboard */,
+				50B1C7B21699746F0096BF93 /* MainStoryboard_iPad.storyboard */,
+				50B1C79B1699746F0096BF93 /* Supporting Files */,
+			);
+			path = SimpleBook;
+			sourceTree = "<group>";
+		};
+		50B1C79B1699746F0096BF93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50B1C79C1699746F0096BF93 /* SimpleBook-Info.plist */,
+				50B1C79D1699746F0096BF93 /* InfoPlist.strings */,
+				50B1C7A01699746F0096BF93 /* main.m */,
+				50B1C7A21699746F0096BF93 /* SimpleBook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50B1C7C1169974700096BF93 /* SimpleBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				50B1C7C7169974700096BF93 /* SimpleBookTests.h */,
+				50B1C7C8169974700096BF93 /* SimpleBookTests.m */,
+				50B1C7C2169974700096BF93 /* Supporting Files */,
+			);
+			path = SimpleBookTests;
+			sourceTree = "<group>";
+		};
+		50B1C7C2169974700096BF93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50B1C7C3169974700096BF93 /* SimpleBookTests-Info.plist */,
+				50B1C7C4169974700096BF93 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50B1C78F1699746F0096BF93 /* SimpleBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B1C7CC169974700096BF93 /* Build configuration list for PBXNativeTarget "SimpleBook" */;
+			buildPhases = (
+				50B1C78C1699746F0096BF93 /* Sources */,
+				50B1C78D1699746F0096BF93 /* Frameworks */,
+				50B1C78E1699746F0096BF93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleBook;
+			productName = SimpleBook;
+			productReference = 50B1C7901699746F0096BF93 /* SimpleBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50B1C7B9169974700096BF93 /* SimpleBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B1C7CF169974700096BF93 /* Build configuration list for PBXNativeTarget "SimpleBookTests" */;
+			buildPhases = (
+				50B1C7B5169974700096BF93 /* Sources */,
+				50B1C7B6169974700096BF93 /* Frameworks */,
+				50B1C7B7169974700096BF93 /* Resources */,
+				50B1C7B8169974700096BF93 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50B1C7C0169974700096BF93 /* PBXTargetDependency */,
+			);
+			name = SimpleBookTests;
+			productName = SimpleBookTests;
+			productReference = 50B1C7BA169974700096BF93 /* SimpleBookTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50B1C7871699746F0096BF93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "MySelf Inc.";
+			};
+			buildConfigurationList = 50B1C78A1699746F0096BF93 /* Build configuration list for PBXProject "SimpleBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 50B1C7851699746F0096BF93;
+			productRefGroup = 50B1C7911699746F0096BF93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50B1C78F1699746F0096BF93 /* SimpleBook */,
+				50B1C7B9169974700096BF93 /* SimpleBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50B1C78E1699746F0096BF93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B1C79F1699746F0096BF93 /* InfoPlist.strings in Resources */,
+				50B1C7B11699746F0096BF93 /* MainStoryboard_iPhone.storyboard in Resources */,
+				50B1C7B41699746F0096BF93 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B1C7B7169974700096BF93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B1C7C6169974700096BF93 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50B1C7B8169974700096BF93 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50B1C78C1699746F0096BF93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B1C7A11699746F0096BF93 /* main.m in Sources */,
+				50B1C7A51699746F0096BF93 /* SBAppDelegate.m in Sources */,
+				50B1C7A81699746F0096BF93 /* SBRootViewController.m in Sources */,
+				50B1C7AB1699746F0096BF93 /* SBDataViewController.m in Sources */,
+				50B1C7AE1699746F0096BF93 /* SBModelController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50B1C7B5169974700096BF93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B1C7C9169974700096BF93 /* SimpleBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50B1C7C0169974700096BF93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50B1C78F1699746F0096BF93 /* SimpleBook */;
+			targetProxy = 50B1C7BF169974700096BF93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50B1C79D1699746F0096BF93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50B1C79E1699746F0096BF93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		50B1C7AF1699746F0096BF93 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50B1C7B01699746F0096BF93 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		50B1C7B21699746F0096BF93 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50B1C7B31699746F0096BF93 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		50B1C7C4169974700096BF93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50B1C7C5169974700096BF93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50B1C7CA169974700096BF93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50B1C7CB169974700096BF93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50B1C7CD169974700096BF93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleBook/SimpleBook-Prefix.pch";
+				INFOPLIST_FILE = "SimpleBook/SimpleBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		50B1C7CE169974700096BF93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleBook/SimpleBook-Prefix.pch";
+				INFOPLIST_FILE = "SimpleBook/SimpleBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		50B1C7D0169974700096BF93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleBook.app/SimpleBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleBook/SimpleBook-Prefix.pch";
+				INFOPLIST_FILE = "SimpleBookTests/SimpleBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		50B1C7D1169974700096BF93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleBook.app/SimpleBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleBook/SimpleBook-Prefix.pch";
+				INFOPLIST_FILE = "SimpleBookTests/SimpleBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50B1C78A1699746F0096BF93 /* Build configuration list for PBXProject "SimpleBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B1C7CA169974700096BF93 /* Debug */,
+				50B1C7CB169974700096BF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50B1C7CC169974700096BF93 /* Build configuration list for PBXNativeTarget "SimpleBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B1C7CD169974700096BF93 /* Debug */,
+				50B1C7CE169974700096BF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50B1C7CF169974700096BF93 /* Build configuration list for PBXNativeTarget "SimpleBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B1C7D0169974700096BF93 /* Debug */,
+				50B1C7D1169974700096BF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50B1C7871699746F0096BF93 /* Project object */;
+}
