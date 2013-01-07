@@ -7,6 +7,7 @@ setmetatable(_G, {__index=objc})
 
 --------------------------------------------------------------------------------
 
+require "config"
 require "system"
 require "book"
 
