@@ -29,13 +29,13 @@ LuaBridge *theLuaBridge = nil;
     return self;
 }
 
-- (void)callLuaVV:(const char *)funcName {
+- (void)callLuaVV:(NSString *)funcName {
     int top = lua_gettop( state );
 
     lua_getglobal( state, "debug" );
     lua_getfield( state, -1, "traceback" );
 
-    lua_getglobal( state, funcName );
+    lua_getglobal( state, [funcName cStringUsingEncoding:NSASCIIStringEncoding] );
 
     if (lua_pcall(state, 0, 0, -2) != 0)
     {
@@ -46,14 +46,14 @@ LuaBridge *theLuaBridge = nil;
     lua_settop( state, top );
 }
 
-- (void)callLuaVS:(const char *)funcName param:(const char *)stringParam {
+- (void)callLuaVS:(NSString *)funcName param:(NSString *)stringParam {
     int top = lua_gettop( state );
 
     lua_getglobal( state, "debug" );
     lua_getfield( state, -1, "traceback" );
 
-    lua_getglobal( state, funcName );
-    lua_pushstring( state, stringParam );
+    lua_getglobal( state, [funcName cStringUsingEncoding:NSASCIIStringEncoding] );
+    lua_pushstring( state, [stringParam cStringUsingEncoding:NSASCIIStringEncoding] );
 
     if (lua_pcall(state, 1, 0, -3) != 0)
     {
@@ -64,13 +64,13 @@ LuaBridge *theLuaBridge = nil;
     lua_settop( state, top );
 }
 
-- (void)callLuaVI:(const char *)funcName param:(int)intParam {
+- (void)callLuaVI:(NSString *)funcName param:(int)intParam {
     int top = lua_gettop( state );
 
     lua_getglobal( state, "debug" );
     lua_getfield( state, -1, "traceback" );
 
-    lua_getglobal( state, funcName );
+    lua_getglobal( state, [funcName cStringUsingEncoding:NSASCIIStringEncoding] );
     lua_pushinteger( state, intParam );
 
     if (lua_pcall(state, 1, 0, -3) != 0)
@@ -82,8 +82,8 @@ LuaBridge *theLuaBridge = nil;
     lua_settop( state, top );
 }
 
-- (void)dofile:(const char*)fileName {
-    int ret = luaL_dofile(state, fileName);
+- (void)dofile:(NSString *)fileName {
+    int ret = luaL_dofile(state, [fileName cStringUsingEncoding:NSASCIIStringEncoding]);
     if (ret != 0)
     {
         printf( "%s\n", lua_tostring(state, -1) );

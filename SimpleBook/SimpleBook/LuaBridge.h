@@ -18,11 +18,11 @@
 + (LuaBridge *) sharedLua;
 - (LuaBridge *) init;
 
-- (void) callLuaVV:(const char *)funcName;
-- (void) callLuaVS:(const char *)funcName param:(const char *)stringParam;
-- (void) callLuaVI:(const char *)funcName param:(int)intParam;
+- (void) callLuaVV:(NSString *)funcName;
+- (void) callLuaVS:(NSString *)funcName param:(NSString *)stringParam;
+- (void) callLuaVI:(NSString *)funcName param:(int)intParam;
 
-- (void) dofile:(const char *)fileName;
+- (void) dofile:(NSString *)fileName;
 
 @end
 
