@@ -7,10 +7,9 @@
 //
 
 #import "SBDataViewController.h"
+#import "LuaBridge.h"
 
-#include "lua.h"
-#include "lualib.h"
-#include "lauxlib.h"
+
 
 @implementation SBDataViewController
 
@@ -29,18 +28,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    lua_State *L = luaL_newstate();
-    luaL_openlibs(L);
-    
-    NSString  * workpath = [[NSBundle mainBundle] bundlePath];
-    chdir( [workpath cStringUsingEncoding: NSASCIIStringEncoding] );
-        
-    int ret = luaL_dofile( L, "data/main.lua" );
-    if (ret != 0)
-    {
-        printf( "%s\n", lua_tostring(L, -1));
-    }
+
+    [[LuaBridge sharedLua] dofile: "data/main.lua"];
 }
 
 - (void)viewDidUnload
