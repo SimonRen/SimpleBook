@@ -21,6 +21,7 @@
 - (void) callLuaVV:(NSString *)funcName;
 - (void) callLuaVS:(NSString *)funcName param:(NSString *)stringParam;
 - (void) callLuaVI:(NSString *)funcName param:(int)intParam;
+- (void) callLuaVP:(NSString *)funcName param:(void *)idParam;
 
 - (void) dofile:(NSString *)fileName;
 

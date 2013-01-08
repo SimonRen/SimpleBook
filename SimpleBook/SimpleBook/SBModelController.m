@@ -10,6 +10,8 @@
 
 #import "SBDataViewController.h"
 
+#import "LuaBridge.h"
+
 /*
  A controller object that manages a simple model -- a collection of month names.
  
@@ -32,6 +34,16 @@
     self = [super init];
     if (self) {
         // Create the data model.
+        _pageData = [[NSMutableArray alloc] init];
+        [[LuaBridge sharedLua] callLuaVP:@"PreparePageData" param:(__bridge void *)_pageData];
+
+        /*
+        for (int i = 0; i < [_pageData count]; ++i)
+        {
+            printf( "data at index: %d is: %s\n", i, [[_pageData objectAtIndex:i] cStringUsingEncoding:NSASCIIStringEncoding] );
+        }
+        */
+
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         _pageData = [[dateFormatter monthSymbols] copy];
     }

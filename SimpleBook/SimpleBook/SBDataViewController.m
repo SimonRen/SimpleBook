@@ -7,9 +7,6 @@
 //
 
 #import "SBDataViewController.h"
-#import "LuaBridge.h"
-
-
 
 @implementation SBDataViewController
 
@@ -28,8 +25,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
-    [[LuaBridge sharedLua] dofile: @"data/main.lua"];
 }
 
 - (void)viewDidUnload

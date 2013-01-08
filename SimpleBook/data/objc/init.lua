@@ -180,7 +180,7 @@ local _impTypeCache = setmetatable({}, {__index=function(t,impSig)
 end})
 local _idType = ffi.typeof("struct objc_object*")
 objc.idType = _idType
-local _UINT_MAX = 0xffffffffffffffffULL
+--local _UINT_MAX = 0xffffffffffffffffULL
 
 -- Parses an ObjC type encoding string into an array of type dictionaries
 function objc.parseTypeEncoding(str)
@@ -392,6 +392,9 @@ function objc.Obj(v)
         return ffi.cast(_idType, v)
     end
     return nil
+end
+function objc.IdCast(v)
+    return ffi.cast(_idType,v)
 end
 function objc.NSStr(aStr)
     return objc.NSString:stringWithUTF8String_(ffi.cast("char*", aStr))

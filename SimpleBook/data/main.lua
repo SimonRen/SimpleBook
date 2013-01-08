@@ -13,12 +13,39 @@ require "book"
 
 --------------------------------------------------------------------------------
 
-LoadPage = function(part, page)
+PreparePageData = function( pageData )
+    local pageData = IdCast( pageData )
+
+    local cover_fmt = "book.cover.%04d"
+    local index_fmt = "book.index.%04d"
+    local content_fmt = "book.content.%04d"
+    local pagepath
+
+    for i = 1, BOOK_COVER_PAGES do
+        pagepath = string.format( cover_fmt, i )
+        pageData:addObject( NSStr(pagepath) )
+    end
+
+    for i = 1, BOOK_INDEX_PAGES do
+        pagepath = string.format( index_fmt, i )
+        pageData:addObject( NSStr(pagepath) )
+    end
+
+    for i = 1, BOOK_CONTENT_PAGES do
+        pagepath = string.format( content_fmt, i )
+        pageData:addObject( NSStr(pagepath) )
+    end
+
+    print( "pageData OK, count is " .. tostring(pageData:count()) )
+end
+
+--------------------------------------------------------------------------------
+
+LoadPage = function(pagepath)
     -- reset current view
     ViewReset()
 
     -- prepare the page
-    local pagepath  = string.format( 'book.%s.%04d', part, page )
     local processor = require( pagepath )
     if type(processor) == 'function' then
         processor()
@@ -31,7 +58,7 @@ end
 --------------------------------------------------------------------------------
 
 do
-    LoadPage( 'cover', 1 )
+    --LoadPage( "book.cover.0001" )
 end
 
 --------------------------------------------------------------------------------
