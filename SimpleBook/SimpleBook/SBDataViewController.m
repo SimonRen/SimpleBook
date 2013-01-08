@@ -7,6 +7,7 @@
 //
 
 #import "SBDataViewController.h"
+#import "LuaBridge.h"
 
 @implementation SBDataViewController
 
@@ -37,7 +38,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.dataLabel.text = [self.dataObject description];
+    [[LuaBridge sharedLua] callLuaVSP:@"LoadPage" param1:_dataObject param2:(__bridge void *)self];
 }
 
 - (void)viewDidAppear:(BOOL)animated

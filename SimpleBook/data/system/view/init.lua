@@ -6,10 +6,15 @@
 -- To change this template use File | Settings | File Templates.
 --
 
-ViewReset = function()
-    print( "View Reset" )
+local DVC
+
+ViewReset = function( view )
+    DVC = view
 end
 
 ViewShow = function()
-    print( "View Show" )
+end
+
+ViewGet = function()
+    return DVC
 end

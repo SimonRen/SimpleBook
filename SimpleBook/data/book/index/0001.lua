@@ -7,5 +7,6 @@
 --
 
 return function()
-    print( "index 0001 loaded" )
+    local dvc = ViewGet()
+    dvc:dataLabel().text = NSStr( "Index" )
 end

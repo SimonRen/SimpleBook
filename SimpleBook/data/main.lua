@@ -41,9 +41,9 @@ end
 
 --------------------------------------------------------------------------------
 
-LoadPage = function(pagepath)
+LoadPage = function(pagepath, view)
     -- reset current view
-    ViewReset()
+    ViewReset( IdCast(view) )
 
     -- prepare the page
     local processor = require( pagepath )
@@ -56,10 +56,6 @@ LoadPage = function(pagepath)
 end
 
 --------------------------------------------------------------------------------
-
-do
-    --LoadPage( "book.cover.0001" )
-end
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------

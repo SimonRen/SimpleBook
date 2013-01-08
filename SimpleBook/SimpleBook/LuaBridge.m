@@ -133,6 +133,33 @@ LuaBridge *theLuaBridge = nil;
     lua_settop( state, top );
 }
 
+- (void)callLuaVSP:(NSString *)funcName param1:(NSString *)stringParam param2:(void *)ptrParam {
+    int top = lua_gettop( state );
+
+    lua_getglobal( state, "debug" );
+    lua_getfield( state, -1, "traceback" );
+
+    lua_getglobal( state, [funcName cStringUsingEncoding:NSASCIIStringEncoding] );
+    if (lua_isnil( state, -1 ))
+    {
+        printf( "|Lua| function [%s] is nil\n", [funcName cStringUsingEncoding:NSASCIIStringEncoding] );
+        lua_settop( state, top );
+        return;
+    }
+
+    lua_pushstring( state, [stringParam cStringUsingEncoding:NSASCIIStringEncoding] );
+    lua_pushlightuserdata( state, ptrParam );
+
+    if (lua_pcall(state, 2, 0, -4) != 0)
+    {
+        const char *msg = lua_tostring( state, -1 );
+        printf( "|Lua| call VP error\n" );
+        printf( "|Lua| %s\n", msg );
+    }
+
+    lua_settop( state, top );
+}
+
 - (void)dofile:(NSString *)fileName {
     int ret = luaL_dofile(state, [fileName cStringUsingEncoding:NSASCIIStringEncoding]);
     if (ret != 0)

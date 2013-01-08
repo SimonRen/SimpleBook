@@ -7,5 +7,6 @@
 --
 
 return function()
-    print( "content 0001 loaded" )
+    local dvc = ViewGet()
+    dvc:dataLabel().text = NSStr( "Content" .. math.random(1,100) )
 end

@@ -43,9 +43,6 @@
             printf( "data at index: %d is: %s\n", i, [[_pageData objectAtIndex:i] cStringUsingEncoding:NSASCIIStringEncoding] );
         }
         */
-
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        _pageData = [[dateFormatter monthSymbols] copy];
     }
     return self;
 }
