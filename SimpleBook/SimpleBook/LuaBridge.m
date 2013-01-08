@@ -9,6 +9,7 @@
 
 #include "lualib.h"
 #include "lauxlib.h"
+#include "lxplib.h"
 
 LuaBridge *theLuaBridge = nil;
 
@@ -21,6 +22,7 @@ LuaBridge *theLuaBridge = nil;
     {
         state = luaL_newstate();
         luaL_openlibs( state );
+        luaopen_lxp( state );
 
         NSString *workpath = [[NSBundle mainBundle] bundlePath];
         chdir( [workpath cStringUsingEncoding:NSASCIIStringEncoding] );

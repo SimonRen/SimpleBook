@@ -4,6 +4,12 @@ package.path = package.path .. ';?/init.lua;../?.lua;./data/?/init.lua;./data/?.
 -- ObjC
 local objc = require "objc"
 setmetatable(_G, {__index=objc})
+objc.loadFramework( "Foundation" )
+
+-- Bridge Support
+local bs = require "objc.BridgeSupport"
+--bs.loadFramework( "Foundation" )
+--setmetatable(_G, {__index=bs})
 
 --------------------------------------------------------------------------------
 
@@ -56,9 +62,10 @@ LoadPage = function(pagepath, view)
 end
 
 --------------------------------------------------------------------------------
-print( UITextAlignmentLeft )
-print( CGSize )
 print( UILabel )
+print( bs.CGPointZero )
+print( bs.UITextAlignmentLeft )
+print( bs.CGSize )
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------

@@ -4,6 +4,12 @@
     <content url="file://$MODULE_DIR$/.idea">
       <sourceFolder url="file://$MODULE_DIR$/.idea" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/3rd/include/expat.h">
+      <sourceFolder url="file://$MODULE_DIR$/3rd/include/expat.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/3rd/include/expat_external.h">
+      <sourceFolder url="file://$MODULE_DIR$/3rd/include/expat_external.h" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/3rd/include/lauxlib.h">
       <sourceFolder url="file://$MODULE_DIR$/3rd/include/lauxlib.h" isTestSource="false" />
     </content>
@@ -21,6 +27,9 @@
     </content>
     <content url="file://$MODULE_DIR$/3rd/include/lualib.h">
       <sourceFolder url="file://$MODULE_DIR$/3rd/include/lualib.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/3rd/src">
+      <sourceFolder url="file://$MODULE_DIR$/3rd/src" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/SimpleBook">
       <sourceFolder url="file://$MODULE_DIR$/SimpleBook" isTestSource="false" />
