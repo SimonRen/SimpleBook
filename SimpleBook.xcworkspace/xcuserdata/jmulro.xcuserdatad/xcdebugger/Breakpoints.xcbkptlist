@@ -9,11 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "SimpleBook/SimpleBook/SBDataViewController.m"
-         timestampString = "379159233.719224"
+         timestampString = "379350871.418335"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "30"
-         endingLineNumber = "30"
+         startingLineNumber = "31"
+         endingLineNumber = "31"
          landmarkName = "-viewDidUnload"
          landmarkType = "5">
       </FileBreakpoint>
