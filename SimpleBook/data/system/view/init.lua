@@ -9,7 +9,7 @@
 local DVC
 
 ViewReset = function( view )
-    DVC = view
+    DVC = view:defaultView()
 end
 
 ViewShow = function()
@@ -18,3 +18,8 @@ end
 ViewGet = function()
     return DVC
 end
+
+ViewAdd = function( control )
+    DVC:addSubview( control )
+end
+

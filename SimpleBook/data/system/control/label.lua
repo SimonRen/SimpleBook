@@ -10,8 +10,8 @@
 
 param = {
     text = "abc",
-    >>size = {10,20},
-    >>pos = {10,20},
+    size = {10,20},
+    pos = {10,20},
     color = {a,r,g,b} or "black", "blue", "white",
     font = "simsun",
     fontSize = 12,
@@ -28,14 +28,16 @@ param = {
 --]]
 
 NewLabel = function( param )
-    local dvc = ViewGet()
-
-    local label = UILabel:alloc():init()
+    local label = UILabel:alloc():initWithFrame( BridgeSupport.CGRect( BridgeSupport.CGPoint(unpack(param.pos)), BridgeSupport.CGSize(unpack(param.size)) ) )
     label.text = NSStr( param.text )
     label.font = FontGet(param.font, param.fontSize)
     label.textColor = ColorGet( param.color )
-    label.shadowColor = ColorGet( param.shadowColor )
-    label.shadowOffset = CGSize(param.shadowOffset or {0,0})
+
+    if (param.shadowColor and param.shadowOffset) then
+        label.shadowColor = ColorGet( param.shadowColor )
+        label.shadowOffset = BridgeSupport.CGSize( unpack(param.shadowOffset) )
+    end
+
     label.textAlignment = AlignmentGet( param.alignment )
     label.highlightedTextColor = ColorGet( param.highlightedColor )
     label.highlighted = param.hilighted and true or false
@@ -44,4 +46,5 @@ NewLabel = function( param )
         label.userInteractionEnable = true
     end
 
+    ViewAdd( label )
 end

@@ -1,0 +1,122 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<constant type='@' name='CIDetectorAccuracy'/>
+<constant type='@' name='CIDetectorAccuracyHigh'/>
+<constant type='@' name='CIDetectorAccuracyLow'/>
+<constant type='@' name='CIDetectorTypeFace'/>
+<constant type='@' name='CIFeatureTypeFace'/>
+<constant type='@' name='kCIApplyOptionColorSpace'/>
+<constant type='@' name='kCIApplyOptionDefinition'/>
+<constant type='@' name='kCIApplyOptionExtent'/>
+<constant type='@' name='kCIApplyOptionUserInfo'/>
+<constant type='@' name='kCIAttributeClass'/>
+<constant type='@' name='kCIAttributeDefault'/>
+<constant type='@' name='kCIAttributeDescription'/>
+<constant type='@' name='kCIAttributeDisplayName'/>
+<constant type='@' name='kCIAttributeFilterCategories'/>
+<constant type='@' name='kCIAttributeFilterDisplayName'/>
+<constant type='@' name='kCIAttributeFilterName'/>
+<constant type='@' name='kCIAttributeIdentity'/>
+<constant type='@' name='kCIAttributeMax'/>
+<constant type='@' name='kCIAttributeMin'/>
+<constant type='@' name='kCIAttributeName'/>
+<constant type='@' name='kCIAttributeReferenceDocumentation'/>
+<constant type='@' name='kCIAttributeSliderMax'/>
+<constant type='@' name='kCIAttributeSliderMin'/>
+<constant type='@' name='kCIAttributeType'/>
+<constant type='@' name='kCIAttributeTypeAngle'/>
+<constant type='@' name='kCIAttributeTypeBoolean'/>
+<constant type='@' name='kCIAttributeTypeColor'/>
+<constant type='@' name='kCIAttributeTypeCount'/>
+<constant type='@' name='kCIAttributeTypeDistance'/>
+<constant type='@' name='kCIAttributeTypeInteger'/>
+<constant type='@' name='kCIAttributeTypeOffset'/>
+<constant type='@' name='kCIAttributeTypePosition'/>
+<constant type='@' name='kCIAttributeTypePosition3'/>
+<constant type='@' name='kCIAttributeTypeRectangle'/>
+<constant type='@' name='kCIAttributeTypeScalar'/>
+<constant type='@' name='kCIAttributeTypeTime'/>
+<constant type='@' name='kCICategoryApplePrivate'/>
+<constant type='@' name='kCICategoryBlur'/>
+<constant type='@' name='kCICategoryBuiltIn'/>
+<constant type='@' name='kCICategoryColorAdjustment'/>
+<constant type='@' name='kCICategoryColorEffect'/>
+<constant type='@' name='kCICategoryCompositeOperation'/>
+<constant type='@' name='kCICategoryDistortionEffect'/>
+<constant type='@' name='kCICategoryFilterGenerator'/>
+<constant type='@' name='kCICategoryGenerator'/>
+<constant type='@' name='kCICategoryGeometryAdjustment'/>
+<constant type='@' name='kCICategoryGradient'/>
+<constant type='@' name='kCICategoryHalftoneEffect'/>
+<constant type='@' name='kCICategoryHighDynamicRange'/>
+<constant type='@' name='kCICategoryInterlaced'/>
+<constant type='@' name='kCICategoryNonSquarePixels'/>
+<constant type='@' name='kCICategoryReduction'/>
+<constant type='@' name='kCICategorySharpen'/>
+<constant type='@' name='kCICategoryStillImage'/>
+<constant type='@' name='kCICategoryStylize'/>
+<constant type='@' name='kCICategoryTileEffect'/>
+<constant type='@' name='kCICategoryTransition'/>
+<constant type='@' name='kCICategoryVideo'/>
+<constant type='@' name='kCIContextOutputColorSpace'/>
+<constant type='@' name='kCIContextUseSoftwareRenderer'/>
+<constant type='@' name='kCIContextWorkingColorSpace'/>
+<constant type='i' name='kCIFormatARGB8'/>
+<constant type='i' name='kCIFormatRGBA16'/>
+<constant type='i' name='kCIFormatRGBAf'/>
+<constant type='i' name='kCIFormatRGBAh'/>
+<constant type='@' name='kCIImageColorSpace'/>
+<constant type='@' name='kCIInputAngleKey'/>
+<constant type='@' name='kCIInputAspectRatioKey'/>
+<constant type='@' name='kCIInputBackgroundImageKey'/>
+<constant type='@' name='kCIInputBrightnessKey'/>
+<constant type='@' name='kCIInputCenterKey'/>
+<constant type='@' name='kCIInputColorKey'/>
+<constant type='@' name='kCIInputContrastKey'/>
+<constant type='@' name='kCIInputEVKey'/>
+<constant type='@' name='kCIInputExtentKey'/>
+<constant type='@' name='kCIInputGradientImageKey'/>
+<constant type='@' name='kCIInputImageKey'/>
+<constant type='@' name='kCIInputIntensityKey'/>
+<constant type='@' name='kCIInputMaskImageKey'/>
+<constant type='@' name='kCIInputRadiusKey'/>
+<constant type='@' name='kCIInputRefractionKey'/>
+<constant type='@' name='kCIInputSaturationKey'/>
+<constant type='@' name='kCIInputScaleKey'/>
+<constant type='@' name='kCIInputShadingImageKey'/>
+<constant type='@' name='kCIInputSharpnessKey'/>
+<constant type='@' name='kCIInputTargetImageKey'/>
+<constant type='@' name='kCIInputTimeKey'/>
+<constant type='@' name='kCIInputTransformKey'/>
+<constant type='@' name='kCIInputWidthKey'/>
+<constant type='@' name='kCIOutputImageKey'/>
+<constant type='@' name='kCIUIParameterSet'/>
+<constant type='@' name='kCIUISetAdvanced'/>
+<constant type='@' name='kCIUISetBasic'/>
+<constant type='@' name='kCIUISetDevelopment'/>
+<constant type='@' name='kCIUISetIntermediate'/>
+<class name='CIFaceFeature'>
+<method selector='hasLeftEyePosition'>
+<retval type='B'/>
+</method>
+<method selector='hasMouthPosition'>
+<retval type='B'/>
+</method>
+<method selector='hasRightEyePosition'>
+<retval type='B'/>
+</method>
+</class>
+<class name='CIFilter'>
+<method variadic='true' selector='apply:' sentinel='0'/>
+<method variadic='true' class_method='true' selector='filterWithName:keysAndValues:' sentinel='0'/>
+</class>
+<class name='CIImage'>
+<method class_method='true' selector='imageWithTexture:size:flipped:colorSpace:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='initWithTexture:size:flipped:colorSpace:'>
+<arg type='B' index='2'/>
+</method>
+</class>
+</signatures>

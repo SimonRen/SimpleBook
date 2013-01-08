@@ -7,6 +7,4 @@
 --
 
 return function()
-    local dvc = ViewGet()
-    dvc:dataLabel().text = NSStr( "Index" )
 end

@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<enum name='MFMailComposeErrorCodeSaveFailed' value='0'/>
+<enum name='MFMailComposeErrorCodeSendFailed' value='1'/>
+<enum name='MFMailComposeResultCancelled' value='0'/>
+<enum name='MFMailComposeResultFailed' value='3'/>
+<enum name='MFMailComposeResultSaved' value='1'/>
+<enum name='MFMailComposeResultSent' value='2'/>
+<enum name='MessageComposeResultCancelled' value='0'/>
+<enum name='MessageComposeResultFailed' value='2'/>
+<enum name='MessageComposeResultSent' value='1'/>
+<informal_protocol name='MFMessageComposeViewControllerDelegate'>
+<method selector='messageComposeViewController:didFinishWithResult:' type='v16@0:4@8i12' type64='v28@0:8@16i24'/>
+</informal_protocol>
+</signatures>

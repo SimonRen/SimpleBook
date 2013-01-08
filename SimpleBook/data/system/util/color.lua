@@ -26,7 +26,7 @@ ColorGet = function( param )
     if type(param) == 'table' then
         return gen_color( unpack(param) )
     elseif type(param) == 'string' then
-        return pre_define(param)
+        return pre_define[param]
     end
 
     return nil

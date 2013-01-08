@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<class name='NSObject'>
+<method selector='previewController:shouldOpenURL:forPreviewItem:'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='QLPreviewControllerDataSource'>
+<method type='i12@0:4@8' selector='numberOfPreviewItemsInPreviewController:' type64='q24@0:8@16'/>
+<method type='@16@0:4@8i12' selector='previewController:previewItemAtIndex:' type64='@32@0:8@16q24'/>
+</informal_protocol>
+<informal_protocol name='QLPreviewControllerDelegate'>
+<method type='{CGRect={CGPoint=ff}{CGSize=ff}}20@0:4@8@12^@16' selector='previewController:frameForPreviewItem:inSourceView:' type64='{CGRect={CGPoint=dd}{CGSize=dd}}40@0:8@16@24^@32'/>
+<method type='B20@0:4@8@12@16' selector='previewController:shouldOpenURL:forPreviewItem:' type64='B40@0:8@16@24@32'/>
+<method type='@20@0:4@8@12^{CGRect={CGPoint=ff}{CGSize=ff}}16' selector='previewController:transitionImageForPreviewItem:contentRect:' type64='@40@0:8@16@24^{CGRect={CGPoint=dd}{CGSize=dd}}32'/>
+<method type='v12@0:4@8' selector='previewControllerDidDismiss:' type64='v24@0:8@16'/>
+<method type='v12@0:4@8' selector='previewControllerWillDismiss:' type64='v24@0:8@16'/>
+</informal_protocol>
+<informal_protocol name='QLPreviewItem'>
+<method type='@8@0:4' selector='previewItemTitle' type64='@16@0:8'/>
+<method type='@8@0:4' selector='previewItemURL' type64='@16@0:8'/>
+</informal_protocol>
+</signatures>

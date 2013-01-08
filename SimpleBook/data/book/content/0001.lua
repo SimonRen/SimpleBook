@@ -7,6 +7,12 @@
 --
 
 return function()
-    local dvc = ViewGet()
-    dvc:dataLabel().text = NSStr( "Content" .. math.random(1,100) )
+    NewLabel {
+        text = "content",
+        size = { 200, 100 },
+        pos = { 40, 140 },
+        color = "black",
+        font = "SimSun",
+        fontSize = 20,
+    }
 end

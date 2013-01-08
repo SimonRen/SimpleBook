@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<enum name='TWRequestMethodDELETE' value='2'/>
+<enum name='TWRequestMethodGET' value='0'/>
+<enum name='TWRequestMethodPOST' value='1'/>
+<enum name='TWTweetComposeViewControllerResultCancelled' value='0'/>
+<enum name='TWTweetComposeViewControllerResultDone' value='1'/>
+</signatures>

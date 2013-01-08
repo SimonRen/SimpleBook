@@ -13,7 +13,6 @@ print = function( ... )
     old_print( ... )
 end
 
-
 require "system.util.color"
 require "system.util.font"
 require "system.util.alignment"

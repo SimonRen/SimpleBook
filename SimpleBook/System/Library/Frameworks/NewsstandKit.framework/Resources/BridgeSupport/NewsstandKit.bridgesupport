@@ -1,0 +1,8 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<constant type='@' name='NKIssueDownloadCompletedNotification'/>
+<enum value='2' name='NKIssueContentStatusAvailable'/>
+<enum value='1' name='NKIssueContentStatusDownloading'/>
+<enum value='0' name='NKIssueContentStatusNone'/>
+</signatures>

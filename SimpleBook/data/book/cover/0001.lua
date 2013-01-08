@@ -7,6 +7,21 @@
 --
 
 return function()
-    local dvc = ViewGet()
-    dvc:dataLabel().text = NSStr( "Cover" )
+    NewLabel {
+        text = "eeee",
+        size = { 200, 100 },
+        pos = { 40, 40 },
+        color = "black",
+        font = "SimSun",
+        fontSize = 12,
+    }
+
+    NewLabel {
+        text = "abcdef",
+        size = { 200, 100 },
+        pos = { 40, 140 },
+        color = "black",
+        font = "SimSun",
+        fontSize = 20,
+    }
 end

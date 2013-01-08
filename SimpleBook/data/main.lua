@@ -8,8 +8,10 @@ objc.loadFramework( "Foundation" )
 
 -- Bridge Support
 local bs = require "objc.BridgeSupport"
---bs.loadFramework( "Foundation" )
---setmetatable(_G, {__index=bs})
+bs.loadFramework( "System/Library/Frameworks/Foundation.framework", true, true )
+bs.loadFramework( "System/Library/Frameworks/UIKit.framework", true, true )
+bs.loadFramework( "System/Library/Frameworks/CoreGraphics.framework", true, true )
+BridgeSupport = bs
 
 --------------------------------------------------------------------------------
 
@@ -62,11 +64,6 @@ LoadPage = function(pagepath, view)
 end
 
 --------------------------------------------------------------------------------
-print( UILabel )
-print( bs.CGPointZero )
-print( bs.UITextAlignmentLeft )
-print( bs.CGSize )
-
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
