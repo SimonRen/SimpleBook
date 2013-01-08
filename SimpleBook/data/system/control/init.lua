@@ -5,3 +5,6 @@
 -- Time: 11:29 PM
 -- To change this template use File | Settings | File Templates.
 --
+
+require "system.control.label"
+
