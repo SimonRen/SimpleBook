@@ -17,7 +17,7 @@ return function()
     }
 
     NewLabel {
-        text = "abcdef",
+        text = "cover",
         size = { 200, 100 },
         pos = { 40, 140 },
         color = "black",

@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bce29b83-9f1f-403a-8ea2-03a51770b7c5" name="Default" comment="need fix for CFObjCIsCollectable exception.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SimpleBook/data/system/util/coregraphics.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SimpleBook/data/book/images/test.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SimpleBook/data/system/control/image.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook.xcworkspace/xcuserdata/jmulro.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/SimpleBook.xcworkspace/xcuserdata/jmulro.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook.xcworkspace/xcuserdata/jmulro.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist" afterPath="$PROJECT_DIR$/SimpleBook.xcworkspace/xcuserdata/jmulro.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/data/book/content/0001.lua" afterPath="$PROJECT_DIR$/SimpleBook/data/book/content/0001.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/data/book/cover/0001.lua" afterPath="$PROJECT_DIR$/SimpleBook/data/book/cover/0001.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/data/book/index/0001.lua" afterPath="$PROJECT_DIR$/SimpleBook/data/book/index/0001.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/data/main.lua" afterPath="$PROJECT_DIR$/SimpleBook/data/main.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/data/system/control/init.lua" afterPath="$PROJECT_DIR$/SimpleBook/data/system/control/init.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/data/system/control/label.lua" afterPath="$PROJECT_DIR$/SimpleBook/data/system/control/label.lua" />
     </list>
     <ignored path="SimpleBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,16 +32,14 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.4680171">
+        <splitter split-orientation="vertical" split-proportion="0.46801716">
           <split-first>
             <leaf>
-              <file leaf-file-name="SBDataViewController.m" pinned="false" current="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/SBDataViewController.m">
+              <file leaf-file-name="UIView.h" pinned="false" current="false" current-in-tab="true">
+                <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="69" column="3" selection-start="1571" selection-end="1571" vertical-scroll-proportion="0.904943">
-                      <folding>
-                        <element signature="e#238#277#0" expanded="true" />
-                      </folding>
+                    <state line="233" column="85" selection-start="11421" selection-end="11421" vertical-scroll-proportion="0.045627378">
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -43,10 +48,10 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="0001.lua" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="0001.lua" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/SimpleBook/data/book/content/0001.lua">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="10" column="22" selection-start="206" selection-end="206" vertical-scroll-proportion="0.4276316">
+                    <state line="17" column="27" selection-start="516" selection-end="516" vertical-scroll-proportion="0.71986973">
                       <folding />
                     </state>
                   </provider>
@@ -60,10 +65,10 @@
         <splitter split-orientation="vertical" split-proportion="0.5">
           <split-first>
             <leaf>
-              <file leaf-file-name="label.lua" pinned="false" current="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/control/label.lua">
+              <file leaf-file-name="image.lua" pinned="false" current="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/control/image.lua">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="31" column="6" selection-start="793" selection-end="793" vertical-scroll-proportion="0.9444444">
+                    <state line="31" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.9084507">
                       <folding />
                     </state>
                   </provider>
@@ -73,10 +78,10 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="main.lua" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="main.lua" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/SimpleBook/data/main.lua">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="30" column="0" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.6866197">
+                    <state line="51" column="22" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.5451505">
                       <folding />
                     </state>
                   </provider>
@@ -99,21 +104,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SimpleBook/data/system/util/alignment.lua" />
-        <option value="$PROJECT_DIR$/SimpleBook/System/Library/Frameworks/UIKit.framework/Resources/BridgeSupport/UIKit.bridgesupport" />
         <option value="$PROJECT_DIR$/SimpleBook/data/system/util/coregraphics.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/SimpleBook/SBDataViewController.h" />
-        <option value="$PROJECT_DIR$/SimpleBook/data/book/index/0001.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/data/system/util/init.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/System/Library/Frameworks/CoreGraphics.framework/Resources/BridgeSupport/CoreGraphics.bridgesupport" />
         <option value="$PROJECT_DIR$/SimpleBook/data/system/view/init.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/data/objc/BridgeSupport.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/SimpleBook/SBDataViewController.m" />
-        <option value="$PROJECT_DIR$/SimpleBook/data/main.lua" />
-        <option value="$PROJECT_DIR$/SimpleBook/data/system/control/label.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/data/system/util/font.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/data/system/util/color.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/data/book/cover/0001.lua" />
+        <option value="$PROJECT_DIR$/SimpleBook/data/book/index/0001.lua" />
+        <option value="$PROJECT_DIR$/SimpleBook/data/system/control/init.lua" />
+        <option value="$PROJECT_DIR$/SimpleBook/data/system/control/label.lua" />
+        <option value="$PROJECT_DIR$/SimpleBook/data/main.lua" />
+        <option value="$PROJECT_DIR$/SimpleBook/data/system/control/image.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/data/book/content/0001.lua" />
       </list>
     </option>
@@ -121,7 +126,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1014" />
+    <option name="height" value="1002" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -486,13 +491,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/paintbook/paintbook.xcodeproj" />
+    <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="SimpleBook" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RunManager" selected="Application.SimpleBook">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="SimpleBook" TARGET_NAME="SimpleBook" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="SimpleBook" RUN_TARGET_NAME="SimpleBook" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -572,20 +578,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1014" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1920" height="1002" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2867804" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28941685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15170941" sideWeight="0.6705757" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15331197" sideWeight="0.71058315" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4049676" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29957357" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Kahlua" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32942432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -658,116 +664,118 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SimpleBook/System/Library/Frameworks/UIKit.framework/Resources/BridgeSupport/UIKit.bridgesupport">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="474" column="31" selection-start="26829" selection-end="26845" vertical-scroll-proportion="0.4281437">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/SBRootViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="38" selection-start="321" selection-end="321" vertical-scroll-proportion="0.15924276">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/SBDataViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.15697037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/book/index/0001.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="2" selection-start="173" selection-end="173" vertical-scroll-proportion="0.14270033">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/util/init.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.21405049">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/view/init.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="257" selection-end="257" vertical-scroll-proportion="0.54299754">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/SBDataViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="3" selection-start="1571" selection-end="1571" vertical-scroll-proportion="0.904943">
+        <state line="61" column="0" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.38308457">
           <folding>
             <element signature="e#238#277#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/objc/BridgeSupport.lua">
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="28" selection-start="3734" selection-end="3734" vertical-scroll-proportion="0.3135965">
+        <state line="98" column="0" selection-start="2230" selection-end="2230" vertical-scroll-proportion="0.013363029">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/System/Library/Frameworks/CoreGraphics.framework/Resources/BridgeSupport/CoreGraphics.bridgesupport">
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImage.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="38" selection-start="7717" selection-end="7717" vertical-scroll-proportion="0.8267544">
+        <state line="36" column="17" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.002570694">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/util/font.lua">
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageView.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.24946696">
+        <state line="24" column="0" selection-start="822" selection-end="822" vertical-scroll-proportion="0.46325168">
+          <folding>
+            <element signature="e#99#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleBook/data/book/index/0001.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="205" selection-end="205" vertical-scroll-proportion="0.28138527">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/util/color.lua">
+    <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/view/init.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="31" selection-start="639" selection-end="639" vertical-scroll-proportion="0.69509596">
+        <state line="22" column="28" selection-start="351" selection-end="352" vertical-scroll-proportion="0.7089552">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/book/cover/0001.lua">
+    <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/control/init.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="355" selection-end="355" vertical-scroll-proportion="0.4989339">
+        <state line="11" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.30952382">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/book/content/0001.lua">
+    <entry file="file://$PROJECT_DIR$/SimpleBook/data/objc/init.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="206" selection-end="206" vertical-scroll-proportion="0.4276316">
+        <state line="116" column="24" selection-start="4220" selection-end="4220" vertical-scroll-proportion="0.389755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStringDrawing.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="44" selection-start="2108" selection-end="2108" vertical-scroll-proportion="0.8663239">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="49" selection-start="332" selection-end="332" vertical-scroll-proportion="0.36760926">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/control/label.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="6" selection-start="793" selection-end="793" vertical-scroll-proportion="0.9444444">
+        <state line="26" column="0" selection-start="593" selection-end="593" vertical-scroll-proportion="0.48943663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleBook/data/book/cover/0001.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="205" selection-end="205" vertical-scroll-proportion="0.4347826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="233" column="85" selection-start="11421" selection-end="11421" vertical-scroll-proportion="0.045627378">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SimpleBook/data/main.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.6866197">
+        <state line="51" column="22" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.5451505">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/control/image.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.9084507">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleBook/data/book/content/0001.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="27" selection-start="516" selection-end="516" vertical-scroll-proportion="0.71986973">
           <folding />
         </state>
       </provider>

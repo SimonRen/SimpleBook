@@ -4,13 +4,12 @@ package.path = package.path .. ';?/init.lua;../?.lua;./data/?/init.lua;./data/?.
 -- ObjC
 local objc = require "objc"
 setmetatable(_G, {__index=objc})
-objc.loadFramework( "Foundation" )
 
 -- Bridge Support
 local bs = require "objc.BridgeSupport"
 bs.loadFramework( "System/Library/Frameworks/Foundation.framework", true, true )
-bs.loadFramework( "System/Library/Frameworks/UIKit.framework", true, true )
 bs.loadFramework( "System/Library/Frameworks/CoreGraphics.framework", true, true )
+bs.loadFramework( "System/Library/Frameworks/UIKit.framework", true, true )
 BridgeSupport = bs
 
 --------------------------------------------------------------------------------

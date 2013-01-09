@@ -7,4 +7,5 @@
 --
 
 require "system.control.label"
+require "system.control.image"
 

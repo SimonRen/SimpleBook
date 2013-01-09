@@ -7,4 +7,12 @@
 --
 
 return function()
+    NewLabel {
+        text = "index",
+        size = { 200, 100 },
+        pos = { 40, 140 },
+        color = "black",
+        font = "SimSun",
+        fontSize = 20,
+    }
 end

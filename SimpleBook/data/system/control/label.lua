@@ -28,7 +28,11 @@ param = {
 --]]
 
 NewLabel = function( param )
-    local label = UILabel:alloc():initWithFrame( BridgeSupport.CGRect( BridgeSupport.CGPoint(unpack(param.pos)), BridgeSupport.CGSize(unpack(param.size)) ) )
+    local label = UILabel:alloc():initWithFrame( CGRect( CGPoint(unpack(param.pos)), CGSize(unpack(param.size)) ) )
+    label.numberOfLines = 0
+    label.lineBreakMode = UILineBreakModeWordWrap
+    label.backgroundColor = UIColor:clearColor()
+
     label.text = NSStr( param.text )
     label.font = FontGet(param.font, param.fontSize)
     label.textColor = ColorGet( param.color )
