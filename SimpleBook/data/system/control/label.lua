@@ -47,7 +47,16 @@ NewLabel = function( param )
     label.highlighted = param.hilighted and true or false
 
     if param.clicked then
-        label.userInteractionEnable = true
+        label.userInteractionEnabled = true
+
+        -- Block
+        local block = createBlock( param.clicked, "v@" )
+        block_invocate = BlockInvocation:invocationWithBlock(block)
+
+        -- Recognizer
+        local recognizer = UITapGestureRecognizer:alloc():initWithTarget_action( block_invocate, SEL("performWithObject:") )
+        recognizer.numberOfTapsRequired = 1
+        label:addGestureRecognizer( recognizer )
     end
 
     ViewAdd( label )

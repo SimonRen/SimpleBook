@@ -121,7 +121,7 @@ local _parseCallbacks = {
             if signature ~= nil then
                 local funcName = _curObj.name
                 bs[funcName] = function(...)
-                    print("lazy loading fun " .. funcName )
+                    --print("lazy loading fun " .. funcName )
                     bs[funcName] = ffi.cdef(signature)
                     if _loadingGlobally == true then
                         _G[funcName] = C[funcName]

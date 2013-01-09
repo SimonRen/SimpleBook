@@ -8,20 +8,12 @@
 
 return function()
     NewLabel {
-        text = "eeee",
-        size = { 200, 100 },
-        pos = { 40, 40 },
-        color = "black",
-        font = "SimSun",
-        fontSize = 12,
-    }
-
-    NewLabel {
         text = "cover",
         size = { 200, 100 },
         pos = { 40, 140 },
         color = "black",
         font = "SimSun",
         fontSize = 20,
+        clicked = function() print( '~~~woow~~~' ) end,
     }
 end

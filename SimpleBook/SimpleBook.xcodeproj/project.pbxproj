@@ -30,6 +30,7 @@
 		50F3BCC2169D66A300E16146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7961699746F0096BF93 /* Foundation.framework */; };
 		50F3BCC3169D66A300E16146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7941699746F0096BF93 /* UIKit.framework */; };
 		BB18885A50164624102C3F9D /* LuaBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1889F127D331E5A055A820 /* LuaBridge.m */; };
+		BB188F753AAFC6D4C2149509 /* BlockInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB188C3ADF29DAEAD75BF2FD /* BlockInvocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		50B1C7E416997D850096BF93 /* libluajit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libluajit2.a; sourceTree = "<group>"; };
 		50B1C7E6169982720096BF93 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
 		BB1889F127D331E5A055A820 /* LuaBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaBridge.m; sourceTree = "<group>"; };
+		BB188C3ADF29DAEAD75BF2FD /* BlockInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockInvocation.m; sourceTree = "<group>"; };
+		BB188D09FDEF860C6742B5F2 /* BlockInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockInvocation.h; sourceTree = "<group>"; };
 		BB188EC3A6D18A0903473156 /* LuaBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaBridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +167,8 @@
 				50B1C79B1699746F0096BF93 /* Supporting Files */,
 				BB1889F127D331E5A055A820 /* LuaBridge.m */,
 				BB188EC3A6D18A0903473156 /* LuaBridge.h */,
+				BB188C3ADF29DAEAD75BF2FD /* BlockInvocation.m */,
+				BB188D09FDEF860C6742B5F2 /* BlockInvocation.h */,
 			);
 			path = SimpleBook;
 			sourceTree = "<group>";
@@ -352,6 +357,7 @@
 				50B1C7AE1699746F0096BF93 /* SBModelController.m in Sources */,
 				BB18885A50164624102C3F9D /* LuaBridge.m in Sources */,
 				506E2EC3169C2A8000D2D1CE /* lxplib.c in Sources */,
+				BB188F753AAFC6D4C2149509 /* BlockInvocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
