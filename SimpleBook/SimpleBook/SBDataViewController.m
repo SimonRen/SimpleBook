@@ -44,8 +44,6 @@
     
     [super viewWillAppear:animated];
     [[LuaBridge sharedLua] callLuaVSP:@"LoadPage" param1:_dataObject param2:(__bridge void *)self];
-
-    CGRectMake(10, 10, 10, 10);
 }
 
 - (void)viewDidAppear:(BOOL)animated

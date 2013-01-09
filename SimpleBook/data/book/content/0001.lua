@@ -13,7 +13,7 @@ return function()
         pos = {160,240},
     }
 
-    NewLabel {
+    NewScrollLabel {
         text = "content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890",
         size = { 200, 100 },
         pos = { 40, 140 },

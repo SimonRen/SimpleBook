@@ -7,5 +7,6 @@
 --
 
 require "system.control.label"
+require "system.control.scrollLabel"
 require "system.control.image"
 
