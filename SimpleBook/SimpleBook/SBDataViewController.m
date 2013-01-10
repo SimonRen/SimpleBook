@@ -38,10 +38,6 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    for (UIView *view in [[self defaultView] subviews]) {
-        [view removeFromSuperview];
-    }
-    
     [super viewWillAppear:animated];
     [[LuaBridge sharedLua] callLuaVSP:@"LoadPage" param1:_dataObject param2:(__bridge void *)self];
 }

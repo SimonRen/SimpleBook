@@ -36,13 +36,6 @@
         // Create the data model.
         _pageData = [[NSMutableArray alloc] init];
         [[LuaBridge sharedLua] callLuaVP:@"PreparePageData" param:(__bridge void *)_pageData];
-
-        /*
-        for (int i = 0; i < [_pageData count]; ++i)
-        {
-            printf( "data at index: %d is: %s\n", i, [[_pageData objectAtIndex:i] cStringUsingEncoding:NSASCIIStringEncoding] );
-        }
-        */
     }
     return self;
 }

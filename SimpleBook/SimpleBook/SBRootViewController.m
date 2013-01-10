@@ -12,6 +12,9 @@
 
 #import "SBDataViewController.h"
 
+SBRootViewController *theRootViewController = nil;
+UIPageViewController *thePageViewController = nil;
+
 @interface SBRootViewController ()
 @property (readonly, strong, nonatomic) SBModelController *modelController;
 @end
@@ -25,6 +28,47 @@
 {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
+}
+
+- (void) fadeOut:(int)page {
+    [UIView animateWithDuration:0.2
+                          delay:0.1
+                        options:UIViewAnimationCurveLinear
+                     animations:^{ [[[self pageViewController] view] setAlpha:0.0f]; }
+                     completion:^(BOOL finished) {
+                         [self pageGoto:page];
+                         [self fadeIn];
+                     }];
+}
+
+- (void) fadeIn {
+    [UIView animateWithDuration:0.2
+                          delay:0.1
+                        options:UIViewAnimationCurveLinear
+                     animations:^{[[[self pageViewController] view] setAlpha:1.0f];}
+                     completion:^(BOOL finished) {}];
+}
+
+- (void)pageGoto:(int)page {
+
+    NSUInteger pageToGoTo = page;
+
+    SBDataViewController* theCurrentViewController = [self.pageViewController.viewControllers objectAtIndex:0];
+    NSUInteger retrievedIndex = [self.modelController indexOfViewController:theCurrentViewController];
+
+    SBDataViewController *targetPageViewController = [self.modelController viewControllerAtIndex:(pageToGoTo - 1) storyboard:self.storyboard];
+
+    NSArray* theViewControllers = nil;
+    theViewControllers = [NSArray arrayWithObjects:targetPageViewController, nil];
+
+    if (retrievedIndex < (pageToGoTo - 1) && retrievedIndex != (pageToGoTo - 1)) {
+
+        [self.pageViewController setViewControllers:theViewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:NULL];
+    }
+
+    if (retrievedIndex > (pageToGoTo - 1) && retrievedIndex != (pageToGoTo - 1)) {
+        [self.pageViewController setViewControllers:theViewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:NULL];
+    }
 }
 
 #pragma mark - View lifecycle
@@ -57,6 +101,9 @@
 
     // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
     self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
+
+    theRootViewController = self;
+    thePageViewController = self.pageViewController;
 }
 
 - (void)viewDidUnload
@@ -146,6 +193,14 @@
 
 
     return UIPageViewControllerSpineLocationMid;
+}
+
++ (id) sharedRootVC {
+    return theRootViewController;
+}
+
++ (id) sharedPageVC {
+    return thePageViewController;
 }
 
 @end

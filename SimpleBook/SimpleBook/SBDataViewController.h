@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SBDataViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIView *defaultView;
 @property (strong, nonatomic) id dataObject;
+
 @end

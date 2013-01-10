@@ -6,20 +6,32 @@
 -- To change this template use File | Settings | File Templates.
 --
 
-local DVC
+local currentView
+local currentDefaultView
 
-ViewReset = function( view )
-    DVC = view:defaultView()
+ViewChange = function( view )
+    currentView = view
+    currentDefaultView = currentView:defaultView()
+end
+
+ViewReset = function()
+    local views = currentDefaultView:subviews()
+    local count = views:count()
+
+    for index = 0, count - 1 do
+        local subview = views:objectAtIndex(index)
+        subview:removeFromSuperview()
+    end
 end
 
 ViewShow = function()
 end
 
 ViewGet = function()
-    return DVC
+    return currentDefaultView
 end
 
 ViewAdd = function( control )
-    DVC:addSubview( control )
+    currentDefaultView:addSubview( control )
 end
 

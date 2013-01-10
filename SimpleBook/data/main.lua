@@ -50,7 +50,8 @@ end
 
 LoadPage = function(pagepath, view)
     -- reset current view
-    ViewReset( IdCast(view) )
+    ViewChange( IdCast(view) )
+    ViewReset()
 
     -- prepare the page
     local processor = require( pagepath )
@@ -60,6 +61,11 @@ LoadPage = function(pagepath, view)
 
     -- show
     ViewShow()
+end
+
+GotoPage = function( pagepath )
+    local page = PagepathToPage(pagepath)
+    SBRootViewController:sharedRootVC():pageGoto(page)
 end
 
 --------------------------------------------------------------------------------

@@ -11,6 +11,6 @@ return function()
         size = {80,40},
         pos = {120,130},
         image = "test.png",
-        clicked = function() print( "OOOKKK" ) end,
+        clicked = function() GotoPage( "book.cover.0001" ) end,
     }
 end

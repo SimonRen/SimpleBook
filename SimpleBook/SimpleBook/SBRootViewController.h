@@ -10,6 +10,13 @@
 
 @interface SBRootViewController : UIViewController <UIPageViewControllerDelegate>
 
+- (void) fadeOut:(int)page;
+- (void) fadeIn;
+- (void) pageGoto:(int)page;
+
++ (id) sharedRootVC;
++ (id) sharedPageVC;
+
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 
 @end
