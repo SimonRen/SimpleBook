@@ -73,8 +73,8 @@ NewAnim = function( param )
             imageview.image = currentImage
         end
 
-        local tap_block = createBlock( tap_callback, "v@" )
-        local tap_block_invocate = BlockInvocation:invocationWithBlock( tap_block )
+        local tap_block = GenCallback( tap_callback )
+        local tap_block_invocate = BlockInvocation:invocationWithCallbackIdx( tap_block )
         local tap_recognizer = UITapGestureRecognizer:alloc():initWithTarget_action( tap_block_invocate, SEL("performWithObject:") )
         tap_recognizer.numberOfTapsRequired = 1
         imageview:addGestureRecognizer( tap_recognizer )
@@ -88,7 +88,6 @@ NewAnim = function( param )
         local maxIdx = image_count
 
         local next = function()
-            print( "next" )
             currentIdx = currentIdx + 1
             if (currentIdx >= maxIdx) then currentIdx = 0 end
 
@@ -98,7 +97,6 @@ NewAnim = function( param )
         end
 
         local prev = function()
-            print( "prev" )
             currentIdx = currentIdx - 1
             if (currentIdx < 0) then currentIdx = maxIdx - 1 end
 
@@ -108,23 +106,23 @@ NewAnim = function( param )
         end
 
         -- tap
-        local tap_block = createBlock( next, "v@" )
-        local tap_block_invocate = BlockInvocation:invocationWithBlock( tap_block )
+        local tap_block = GenCallback( next, "v@" )
+        local tap_block_invocate = BlockInvocation:invocationWithCallbackIdx( tap_block )
         local tap_recognizer = UITapGestureRecognizer:alloc():initWithTarget_action( tap_block_invocate, SEL("performWithObject:") )
         tap_recognizer.numberOfTapsRequired = 1
         imageview:addGestureRecognizer( tap_recognizer )
 
         -- swipe left
-        local swipeleft_block = createBlock( prev, "v@" )
-        local swipeleft_block_invocate = BlockInvocation:invocationWithBlock( swipeleft_block )
+        local swipeleft_block = GenCallback( prev, "v@" )
+        local swipeleft_block_invocate = BlockInvocation:invocationWithCallbackIdx( swipeleft_block )
         local swipeleft_recognizer = UISwipeGestureRecognizer:alloc():initWithTarget_action( swipeleft_block_invocate, SEL("performWithObject:") )
         swipeleft_recognizer.direction = UISwipeGestureRecognizerDirectionLeft
         swipeleft_recognizer.numberOfTouchesRequired = 2
         imageview:addGestureRecognizer( swipeleft_recognizer )
 
         -- swipe right
-        local swiperight_block = createBlock( next, "v@" )
-        local swiperight_block_invocate = BlockInvocation:invocationWithBlock( swiperight_block )
+        local swiperight_block = GenCallback( next, "v@" )
+        local swiperight_block_invocate = BlockInvocation:invocationWithCallbackIdx( swiperight_block )
         local swiperight_recognizer = UISwipeGestureRecognizer:alloc():initWithTarget_action( swiperight_block_invocate, SEL("performWithObject:") )
         swiperight_recognizer.direction = UISwipeGestureRecognizerDirectionRight
         swiperight_recognizer.numberOfTouchesRequired = 2

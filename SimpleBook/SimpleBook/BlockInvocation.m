@@ -4,34 +4,33 @@
 // To change the template use AppCode | Preferences | File Templates.
 //
 
-
 #import "BlockInvocation.h"
-
+#import "LuaBridge.h"
 
 @implementation BlockInvocation
 
--(id)initWithBlock:(void *)aBlock {
+-(id)initWithCallbackIdx:(int)idx {
     if (self = [self init]) {
-        block = (__bridge void *)[(__bridge void (^)(void))aBlock copy];
+        callbackIdx = idx;
     }
 
     return self;
 }
 
-+(BlockInvocation *)invocationWithBlock:(void *)aBlock {
-    return [[self alloc] initWithBlock:aBlock];
++(BlockInvocation *)invocationWithCallbackIdx:(int)idx {
+    return [[self alloc] initWithCallbackIdx:idx];
 }
 
 -(void)perform {
-    ((__bridge void (^)(void))block)();
+    [[LuaBridge sharedLua] callLuaVI:@"CastCallback" param:callbackIdx];
 }
 
 -(void)performWithObject:(id)anObject {
-    ((__bridge void (^)(id arg1))block)(anObject);
+    [[LuaBridge sharedLua] callLuaVI:@"CastCallback" param:callbackIdx];
 }
 
 -(void)performWithObject:(id)anObject object:(id)anotherObject {
-    ((__bridge void (^)(id arg1, id arg2))block)(anObject, anotherObject);
+    [[LuaBridge sharedLua] callLuaVI:@"CastCallback" param:callbackIdx];
 }
 
 @end

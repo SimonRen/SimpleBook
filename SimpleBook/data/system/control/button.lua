@@ -39,8 +39,8 @@ NewButton = function( param )
         button.userInteractionEnabled = true
 
         -- Block
-        local block = createBlock( param.clicked, "vv" )
-        local block_invocate = BlockInvocation:invocationWithBlock(block)
+        local block = GenCallback( param.clicked, "vv" )
+        local block_invocate = BlockInvocation:invocationWithCallbackIdx(block)
 
         -- action
         button:addTarget_action_forControlEvents( block_invocate, SEL("perform"), UIControlEventTouchUpInside )

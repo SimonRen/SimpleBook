@@ -52,6 +52,7 @@ LoadPage = function(pagepath, view)
     -- reset current view
     ViewChange( IdCast(view) )
     ViewReset()
+    PurgeCallback()
 
     -- prepare the page
     local processor = require( pagepath )

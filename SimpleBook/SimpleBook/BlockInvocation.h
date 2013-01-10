@@ -9,11 +9,11 @@
 
 
 @interface BlockInvocation : NSObject {
-    void *block;
+    int callbackIdx;
 }
 
--(id)initWithBlock:(void *)aBlock;
-+(BlockInvocation *)invocationWithBlock:(void *)aBlock;
+-(id)initWithCallbackIdx:(int)idx;
++(BlockInvocation *)invocationWithCallbackIdx:(int)idx;
 
 -(void)perform;
 -(void)performWithObject:(id)anObject;

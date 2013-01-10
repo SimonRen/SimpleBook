@@ -50,8 +50,8 @@ NewLabel = function( param )
         label.userInteractionEnabled = true
 
         -- Block
-        local block = createBlock( param.clicked, "v@" )
-        block_invocate = BlockInvocation:invocationWithBlock(block)
+        local block = GenCallback( param.clicked, "v@" )
+        block_invocate = BlockInvocation:invocationWithCallbackIdx(block)
 
         -- Recognizer
         local recognizer = UITapGestureRecognizer:alloc():initWithTarget_action( block_invocate, SEL("performWithObject:") )
