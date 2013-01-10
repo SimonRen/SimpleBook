@@ -16,4 +16,14 @@ return function()
         fontSize = 20,
         clicked = function() print( '~~~woow~~~' ) end,
     }
+
+    NewAnim {
+        size = {30,30},
+        pos = {200,200},
+        fmt_images = {"wind/wind%04d.png", 1, 25},
+        anim = 'auto',
+        interval = 0.1,
+        repeatCount = 0,
+    }
+
 end

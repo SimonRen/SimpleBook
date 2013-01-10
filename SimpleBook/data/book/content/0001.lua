@@ -7,18 +7,23 @@
 --
 
 return function()
-    NewImage {
-        size = {30,30},
-        image = "test.png",
-        pos = {160,240},
-    }
 
     NewScrollLabel {
         text = "content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890",
         size = { 200, 100 },
-        pos = { 40, 140 },
+        pos = { 40, 40 },
         color = "black",
         font = "SimSun",
         fontSize = 20,
     }
+
+    NewAnim {
+        size = {30,30},
+        pos = {200,200},
+        fmt_images = {"wind/wind%04d.png", 1, 25},
+        anim = 'tap',
+        interval = 0.5,
+        repeatCount = 0,
+    }
+
 end

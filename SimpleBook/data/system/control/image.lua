@@ -13,6 +13,7 @@ param = {
     image = "path_to_image.png" | png or jpg, load from main bundle
     scale = 1.0(default),
     orientation = up(default), down, left, right, up_mirror, down_mirror, left_mirror, right_mirror
+    clicked = function() end
 --]]
 
 NewImage = function( param )
@@ -38,6 +39,19 @@ NewImage = function( param )
 
     local imageview = UIImageView:alloc():initWithImage( image )
     imageview:setCenter( CGPoint(unpack(param.pos)) )
+
+    if param.clicked then
+        imageview.userInteractionEnabled = true
+
+        -- Block
+        local block = createBlock( param.clicked, "v@" )
+        local block_invocate = BlockInvocation:invocationWithBlock(block)
+
+        -- Recognizer
+        local recognizer = UITapGestureRecognizer:alloc():initWithTarget_action( block_invocate, SEL("performWithObject:") )
+        recognizer.numberOfTapsRequired = 1
+        imageview:addGestureRecognizer( recognizer )
+    end
 
     ViewAdd( imageview )
 end
