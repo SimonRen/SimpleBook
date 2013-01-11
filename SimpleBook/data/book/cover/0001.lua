@@ -10,20 +10,17 @@ return function()
     NewLabel {
         text = "cover",
         size = { 200, 100 },
-        pos = { 40, 140 },
+        pos = { 40, 40 },
         color = "black",
         font = "SimSun",
         fontSize = 20,
         clicked = function() print( '~~~woow~~~' ) end,
     }
 
-    NewAnim {
-        size = {30,30},
-        pos = {200,200},
-        fmt_images = {"wind/wind%04d.png", 1, 25},
-        anim = 'auto',
-        interval = 0.1,
-        repeatCount = 0,
+    NewMovie {
+        size = {288,180},
+        pos = {30,140},
+        movie = "test.m4v",
     }
 
 end

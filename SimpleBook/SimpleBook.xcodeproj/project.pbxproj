@@ -10,6 +10,7 @@
 		506E2EC1169C2A8000D2D1CE /* libexpat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 506E2EBD169C2A8000D2D1CE /* libexpat.a */; };
 		506E2EC3169C2A8000D2D1CE /* lxplib.c in Sources */ = {isa = PBXBuildFile; fileRef = 506E2EBF169C2A8000D2D1CE /* lxplib.c */; };
 		506E2ECE169C3A1D00D2D1CE /* System in Resources */ = {isa = PBXBuildFile; fileRef = 506E2ECD169C3A1D00D2D1CE /* System */; };
+		50959F3916A007F5006A0F90 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50959F3816A007F5006A0F90 /* MediaPlayer.framework */; };
 		50B1C79F1699746F0096BF93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50B1C79D1699746F0096BF93 /* InfoPlist.strings */; };
 		50B1C7A11699746F0096BF93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B1C7A01699746F0096BF93 /* main.m */; };
 		50B1C7A51699746F0096BF93 /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B1C7A41699746F0096BF93 /* SBAppDelegate.m */; };
@@ -51,7 +52,8 @@
 		506E2EC0169C2A8000D2D1CE /* lxplib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lxplib.h; path = ../src/lxplib.h; sourceTree = "<group>"; };
 		506E2EC5169C2ABF00D2D1CE /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		506E2ECD169C3A1D00D2D1CE /* System */ = {isa = PBXFileReference; lastKnownFileType = folder; path = System; sourceTree = "<group>"; };
-		506E2ED1169C7E5D00D2D1CE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		506E2ED1169C7E5D00D2D1CE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../../../../../Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		50959F3816A007F5006A0F90 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = ../../../../../Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		50B1C7901699746F0096BF93 /* SimpleBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B1C7941699746F0096BF93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50B1C7961699746F0096BF93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50959F3916A007F5006A0F90 /* MediaPlayer.framework in Frameworks */,
 				50F3BCC0169D66A300E16146 /* CoreFoundation.framework in Frameworks */,
 				50F3BCC1169D66A300E16146 /* CoreGraphics.framework in Frameworks */,
 				50F3BCC2169D66A300E16146 /* Foundation.framework in Frameworks */,
@@ -120,7 +123,6 @@
 		50B1C7851699746F0096BF93 = {
 			isa = PBXGroup;
 			children = (
-				506E2ED1169C7E5D00D2D1CE /* CoreFoundation.framework */,
 				506E2ECD169C3A1D00D2D1CE /* System */,
 				50B1C7E6169982720096BF93 /* data */,
 				50B1C7DB16997D850096BF93 /* 3rd */,
@@ -147,6 +149,8 @@
 				50B1C7961699746F0096BF93 /* Foundation.framework */,
 				50B1C7981699746F0096BF93 /* CoreGraphics.framework */,
 				50B1C7BB169974700096BF93 /* SenTestingKit.framework */,
+				506E2ED1169C7E5D00D2D1CE /* CoreFoundation.framework */,
+				50959F3816A007F5006A0F90 /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

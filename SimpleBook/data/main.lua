@@ -10,6 +10,7 @@ local bs = require "objc.BridgeSupport"
 bs.loadFramework( "System/Library/Frameworks/Foundation.framework", true, true )
 bs.loadFramework( "System/Library/Frameworks/CoreGraphics.framework", true, true )
 bs.loadFramework( "System/Library/Frameworks/UIKit.framework", true, true )
+bs.loadFramework( "System/Library/Frameworks/MediaPlayer.framework", true, true )
 BridgeSupport = bs
 
 --------------------------------------------------------------------------------

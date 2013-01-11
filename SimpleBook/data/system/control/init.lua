@@ -11,4 +11,5 @@ require "system.control.scrollLabel"
 require "system.control.image"
 require "system.control.anim"
 require "system.control.button"
+require "system.control.movie"
 
