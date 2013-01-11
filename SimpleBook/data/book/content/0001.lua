@@ -21,7 +21,7 @@ return function()
         size = {30,30},
         pos = {200,200},
         fmt_images = {"wind/wind%04d.png", 1, 25},
-        anim = 'tap',
+        anim = 'auto',
         interval = 0.5,
         repeatCount = 0,
     }

@@ -13,4 +13,13 @@ return function()
         image = "test.png",
         clicked = function() GotoPage( "book.cover.0001" ) end,
     }
+
+    NewAnim {
+        size = {30,30},
+        pos = {200,200},
+        fmt_images = {"wind/wind%04d.png", 1, 25},
+        anim = 'swipe',
+        interval = 0.1,
+        repeatCount = 0,
+    }
 end
