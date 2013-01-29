@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bce29b83-9f1f-403a-8ea2-03a51770b7c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook.xcworkspace/xcuserdata/jmulro.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/SimpleBook.xcworkspace/xcuserdata/jmulro.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook.xcworkspace/xcuserdata/jmulro.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist" afterPath="$PROJECT_DIR$/SimpleBook.xcworkspace/xcuserdata/jmulro.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/SimpleBook.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/SimpleBook/SimpleBook.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/SimpleBook/SBAppDelegate.m" afterPath="$PROJECT_DIR$/SimpleBook/SimpleBook/SBAppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/data/system/control/movie.lua" afterPath="$PROJECT_DIR$/SimpleBook/data/system/control/movie.lua" />
     </list>
     <ignored path="SimpleBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +21,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_5.0_1" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.27899686">
+    <splitter split-orientation="horizontal" split-proportion="0.4338558">
       <split-first>
         <leaf>
           <file leaf-file-name="SBRootViewController.m" pinned="false" current="false" current-in-tab="true">
@@ -44,13 +37,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="MovieObserver.m" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.m">
+          <file leaf-file-name="MovieObserver.h" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="79" column="0" selection-start="2878" selection-end="2878" vertical-scroll-proportion="0.9722628">
-                  <folding>
-                    <element signature="e#41#76#0" expanded="true" />
-                  </folding>
+                <state line="20" column="3" selection-start="441" selection-end="441" vertical-scroll-proportion="0.37956205">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -600,13 +591,22 @@
       <created>1357900616045</created>
       <updated>1357900616045</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="movie interactive.">
+      <created>1359446634702</created>
+      <updated>1359446634702</updated>
+    </task>
+    <task id="LOCAL-00022" summary="view size">
+      <created>1359460153729</created>
+      <updated>1359460153729</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1014" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22100656" sideWeight="0.954594" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -621,7 +621,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24514039" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32822758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -662,7 +661,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="movie." />
+    <option name="LAST_COMMIT_MESSAGE" value="view size" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -694,6 +693,8 @@
     <MESSAGE value="fix print issue with deploy" />
     <MESSAGE value="luajit cast fix.&#10;use a f**k way...." />
     <MESSAGE value="movie." />
+    <MESSAGE value="movie interactive." />
+    <MESSAGE value="view size" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -739,13 +740,6 @@
     <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="167" column="8" selection-start="7276" selection-end="7276" vertical-scroll-proportion="0.33295193">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="3" selection-start="441" selection-end="441" vertical-scroll-proportion="0.6117647">
           <folding />
         </state>
       </provider>
@@ -808,10 +802,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="2878" selection-end="2878" vertical-scroll-proportion="0.9722628">
+        <state line="67" column="0" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.98196167">
           <folding>
             <element signature="e#41#76#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="3" selection-start="441" selection-end="441" vertical-scroll-proportion="0.37956205">
+          <folding />
         </state>
       </provider>
     </entry>
