@@ -7,6 +7,7 @@
 //
 
 #import "SBAppDelegate.h"
+#import "MovieObserver.h"
 
 @implementation SBAppDelegate
 
@@ -16,6 +17,9 @@
 {
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
+
+    [[MovieObserver sharedMovieObserver] register];
+
     return YES;
 }
 

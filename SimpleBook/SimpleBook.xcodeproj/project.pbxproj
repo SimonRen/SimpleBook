@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5023001516B7A9C1001F1226 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5023001416B7A9C1001F1226 /* CoreFoundation.framework */; };
+		5023001716B7A9C8001F1226 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5023001616B7A9C8001F1226 /* MediaPlayer.framework */; };
 		506E2EC1169C2A8000D2D1CE /* libexpat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 506E2EBD169C2A8000D2D1CE /* libexpat.a */; };
 		506E2EC3169C2A8000D2D1CE /* lxplib.c in Sources */ = {isa = PBXBuildFile; fileRef = 506E2EBF169C2A8000D2D1CE /* lxplib.c */; };
 		506E2ECE169C3A1D00D2D1CE /* System in Resources */ = {isa = PBXBuildFile; fileRef = 506E2ECD169C3A1D00D2D1CE /* System */; };
-		50959F3916A007F5006A0F90 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50959F3816A007F5006A0F90 /* MediaPlayer.framework */; };
 		50B1C79F1699746F0096BF93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50B1C79D1699746F0096BF93 /* InfoPlist.strings */; };
 		50B1C7A11699746F0096BF93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B1C7A01699746F0096BF93 /* main.m */; };
 		50B1C7A51699746F0096BF93 /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B1C7A41699746F0096BF93 /* SBAppDelegate.m */; };
@@ -26,11 +27,11 @@
 		50B1C7C9169974700096BF93 /* SimpleBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B1C7C8169974700096BF93 /* SimpleBookTests.m */; };
 		50B1C7E516997D850096BF93 /* libluajit2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7E416997D850096BF93 /* libluajit2.a */; };
 		50B1C7E7169982720096BF93 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 50B1C7E6169982720096BF93 /* data */; };
-		50F3BCC0169D66A300E16146 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506E2ED1169C7E5D00D2D1CE /* CoreFoundation.framework */; };
 		50F3BCC1169D66A300E16146 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7981699746F0096BF93 /* CoreGraphics.framework */; };
 		50F3BCC2169D66A300E16146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7961699746F0096BF93 /* Foundation.framework */; };
 		50F3BCC3169D66A300E16146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C7941699746F0096BF93 /* UIKit.framework */; };
 		BB18885A50164624102C3F9D /* LuaBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1889F127D331E5A055A820 /* LuaBridge.m */; };
+		BB188C0F01CD40245E0A739C /* MovieObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1884A31FEE1BFF556B229A /* MovieObserver.m */; };
 		BB188F753AAFC6D4C2149509 /* BlockInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB188C3ADF29DAEAD75BF2FD /* BlockInvocation.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5023001416B7A9C1001F1226 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5023001616B7A9C8001F1226 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		506E2EBB169C2A8000D2D1CE /* expat_external.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expat_external.h; sourceTree = "<group>"; };
 		506E2EBC169C2A8000D2D1CE /* expat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expat.h; sourceTree = "<group>"; };
 		506E2EBD169C2A8000D2D1CE /* libexpat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexpat.a; sourceTree = "<group>"; };
@@ -52,8 +55,6 @@
 		506E2EC0169C2A8000D2D1CE /* lxplib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lxplib.h; path = ../src/lxplib.h; sourceTree = "<group>"; };
 		506E2EC5169C2ABF00D2D1CE /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		506E2ECD169C3A1D00D2D1CE /* System */ = {isa = PBXFileReference; lastKnownFileType = folder; path = System; sourceTree = "<group>"; };
-		506E2ED1169C7E5D00D2D1CE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../../../../../Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		50959F3816A007F5006A0F90 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = ../../../../../Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		50B1C7901699746F0096BF93 /* SimpleBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B1C7941699746F0096BF93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50B1C7961699746F0096BF93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,6 +87,8 @@
 		50B1C7E216997D850096BF93 /* lualib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lualib.h; sourceTree = "<group>"; };
 		50B1C7E416997D850096BF93 /* libluajit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libluajit2.a; sourceTree = "<group>"; };
 		50B1C7E6169982720096BF93 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		BB18840A534789946776AF33 /* MovieObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieObserver.h; sourceTree = "<group>"; };
+		BB1884A31FEE1BFF556B229A /* MovieObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieObserver.m; sourceTree = "<group>"; };
 		BB1889F127D331E5A055A820 /* LuaBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaBridge.m; sourceTree = "<group>"; };
 		BB188C3ADF29DAEAD75BF2FD /* BlockInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockInvocation.m; sourceTree = "<group>"; };
 		BB188D09FDEF860C6742B5F2 /* BlockInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockInvocation.h; sourceTree = "<group>"; };
@@ -97,8 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50959F3916A007F5006A0F90 /* MediaPlayer.framework in Frameworks */,
-				50F3BCC0169D66A300E16146 /* CoreFoundation.framework in Frameworks */,
+				5023001716B7A9C8001F1226 /* MediaPlayer.framework in Frameworks */,
+				5023001516B7A9C1001F1226 /* CoreFoundation.framework in Frameworks */,
 				50F3BCC1169D66A300E16146 /* CoreGraphics.framework in Frameworks */,
 				50F3BCC2169D66A300E16146 /* Foundation.framework in Frameworks */,
 				50F3BCC3169D66A300E16146 /* UIKit.framework in Frameworks */,
@@ -145,12 +148,12 @@
 		50B1C7931699746F0096BF93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5023001616B7A9C8001F1226 /* MediaPlayer.framework */,
+				5023001416B7A9C1001F1226 /* CoreFoundation.framework */,
 				50B1C7941699746F0096BF93 /* UIKit.framework */,
 				50B1C7961699746F0096BF93 /* Foundation.framework */,
 				50B1C7981699746F0096BF93 /* CoreGraphics.framework */,
 				50B1C7BB169974700096BF93 /* SenTestingKit.framework */,
-				506E2ED1169C7E5D00D2D1CE /* CoreFoundation.framework */,
-				50959F3816A007F5006A0F90 /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,6 +176,8 @@
 				BB188EC3A6D18A0903473156 /* LuaBridge.h */,
 				BB188C3ADF29DAEAD75BF2FD /* BlockInvocation.m */,
 				BB188D09FDEF860C6742B5F2 /* BlockInvocation.h */,
+				BB1884A31FEE1BFF556B229A /* MovieObserver.m */,
+				BB18840A534789946776AF33 /* MovieObserver.h */,
 			);
 			path = SimpleBook;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				BB18885A50164624102C3F9D /* LuaBridge.m in Sources */,
 				506E2EC3169C2A8000D2D1CE /* lxplib.c in Sources */,
 				BB188F753AAFC6D4C2149509 /* BlockInvocation.m in Sources */,
+				BB188C0F01CD40245E0A739C /* MovieObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bce29b83-9f1f-403a-8ea2-03a51770b7c5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook.xcworkspace/xcuserdata/jmulro.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/SimpleBook.xcworkspace/xcuserdata/jmulro.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook.xcworkspace/xcuserdata/jmulro.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist" afterPath="$PROJECT_DIR$/SimpleBook.xcworkspace/xcuserdata/jmulro.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/SimpleBook.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/SimpleBook/SimpleBook.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/SimpleBook/SBAppDelegate.m" afterPath="$PROJECT_DIR$/SimpleBook/SimpleBook/SBAppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/data/book/content/0001.lua" afterPath="$PROJECT_DIR$/SimpleBook/data/book/content/0001.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/data/book/index/0001.lua" afterPath="$PROJECT_DIR$/SimpleBook/data/book/index/0001.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SimpleBook/data/system/control/movie.lua" afterPath="$PROJECT_DIR$/SimpleBook/data/system/control/movie.lua" />
     </list>
     <ignored path="SimpleBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,13 +28,13 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_5.0_1" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.54282117">
+    <splitter split-orientation="horizontal" split-proportion="0.27899686">
       <split-first>
         <leaf>
-          <file leaf-file-name="anim.lua" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/control/anim.lua">
+          <file leaf-file-name="SBRootViewController.m" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/SBRootViewController.m">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="131" column="83" selection-start="4929" selection-end="4929" vertical-scroll-proportion="0.6851211">
+                <state line="173" column="20" selection-start="6580" selection-end="6580" vertical-scroll-proportion="0.66220236">
                   <folding />
                 </state>
               </provider>
@@ -41,11 +44,13 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="0001.lua" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/SimpleBook/data/book/index/0001.lua">
+          <file leaf-file-name="MovieObserver.m" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.m">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="2" selection-start="530" selection-end="530" vertical-scroll-proportion="0.5499154">
-                  <folding />
+                <state line="79" column="0" selection-start="2878" selection-end="2878" vertical-scroll-proportion="0.9722628">
+                  <folding>
+                    <element signature="e#41#76#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -65,8 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SimpleBook/data/system/util/callback.lua" />
-        <option value="$PROJECT_DIR$/SimpleBook/data/system/util/init.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/SimpleBook/BlockInvocation.h" />
         <option value="$PROJECT_DIR$/SimpleBook/SimpleBook/BlockInvocation.m" />
         <option value="$PROJECT_DIR$/SimpleBook/data/system/control/button.lua" />
@@ -76,18 +79,20 @@
         <option value="$PROJECT_DIR$/SimpleBook/data/system/control/init.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/data/main.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/SimpleBook/SBModelController.m" />
-        <option value="$PROJECT_DIR$/SimpleBook/data/system/control/movie.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/data/book/cover/0001.lua" />
-        <option value="$PROJECT_DIR$/SimpleBook/SimpleBook/SBAppDelegate.m" />
         <option value="$PROJECT_DIR$/SimpleBook/data/book/content/0001.lua" />
         <option value="$PROJECT_DIR$/SimpleBook/data/book/index/0001.lua" />
+        <option value="$PROJECT_DIR$/SimpleBook/SimpleBook/SBAppDelegate.m" />
+        <option value="$PROJECT_DIR$/SimpleBook/data/system/control/movie.lua" />
+        <option value="$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.h" />
+        <option value="$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1002" />
+    <option name="height" value="1014" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -273,7 +278,7 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="objc" />
+              <option name="myItemId" value="book" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,6 +297,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="misc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -314,6 +323,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleBook" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -401,6 +432,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Frameworks" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleBook" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frameworks" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MediaPlayer.framework" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Headers" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeFrameworkHeadersNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -543,18 +596,21 @@
       <created>1357899775607</created>
       <updated>1357899775607</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="movie.">
+      <created>1357900616045</created>
+      <updated>1357900616045</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1002" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1920" height="1014" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32829374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33261338" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22100656" sideWeight="0.954594" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15651709" sideWeight="0.6673866" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14797008" sideWeight="0.7789934" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4049676" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -565,6 +621,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24514039" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32822758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -642,111 +699,119 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/control/scrollLabel.lua">
+    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/SBAppDelegate.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.17754173">
+        <state line="27" column="6" selection-start="639" selection-end="639" vertical-scroll-proportion="0.6213592">
+          <folding>
+            <element signature="e#137#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/LuaBridge.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="636" selection-end="636" vertical-scroll-proportion="0.9466019">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/BlockInvocation.h">
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/MediaPlayer.framework/Headers/MPMoviePlayerController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="3" selection-start="429" selection-end="429" vertical-scroll-proportion="0.40625" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/control/label.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.79757786">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/control/init.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="341" selection-end="341" vertical-scroll-proportion="0.285956">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/main.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="1950" selection-end="1950" vertical-scroll-proportion="0.5820643">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/SBDataViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="13" selection-start="873" selection-end="873" vertical-scroll-proportion="0.61591697">
+        <state line="122" column="42" selection-start="4429" selection-end="4429" vertical-scroll-proportion="0.33295193">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/control/movie.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="33" selection-start="1696" selection-end="1696" vertical-scroll-proportion="0.9780034">
+        <state line="14" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.43961352">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/book/images/click_to_play.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/LuaBridge.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="3" selection-start="699" selection-end="699" vertical-scroll-proportion="0.8203884">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="292" column="8" selection-start="15377" selection-end="15377" vertical-scroll-proportion="0.5346021">
+        <state line="167" column="8" selection-start="7276" selection-end="7276" vertical-scroll-proportion="0.33295193">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/SBAppDelegate.m">
+    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="7" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.7647059">
+        <state line="20" column="3" selection-start="441" selection-end="441" vertical-scroll-proportion="0.6117647">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/SBModelController.m">
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageView.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="10" selection-start="2282" selection-end="2282" vertical-scroll-proportion="0.7647059">
+        <state line="23" column="58" selection-start="767" selection-end="767" vertical-scroll-proportion="0.31235698">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/book/cover/0001.lua">
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/usr/include/objc/objc.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="2" selection-start="503" selection-end="503" vertical-scroll-proportion="0.571912">
+        <state line="43" column="24" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.29748285">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/control/image.lua">
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="34" selection-start="827" selection-end="827" vertical-scroll-proportion="0.62975776">
+        <state line="141" column="55" selection-start="6083" selection-end="6083" vertical-scroll-proportion="0.3924485">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/book/content/0001.lua">
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPageViewController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="21" selection-start="667" selection-end="667" vertical-scroll-proportion="0.517301">
+        <state line="41" column="38" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.6098398">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/system/control/anim.lua">
+    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/SBRootViewController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="83" selection-start="4929" selection-end="4929" vertical-scroll-proportion="0.6851211">
+        <state line="19" column="35" selection-start="405" selection-end="405" vertical-scroll-proportion="0.27846673">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleBook/data/book/index/0001.lua">
+    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/SBRootViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="2" selection-start="530" selection-end="530" vertical-scroll-proportion="0.5499154">
+        <state line="173" column="20" selection-start="6580" selection-end="6580" vertical-scroll-proportion="0.66220236">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="29" selection-start="5567" selection-end="5567" vertical-scroll-proportion="0.33295193">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="8" selection-start="667" selection-end="667" vertical-scroll-proportion="0.3957159">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleBook/SimpleBook/MovieObserver.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="0" selection-start="2878" selection-end="2878" vertical-scroll-proportion="0.9722628">
+          <folding>
+            <element signature="e#41#76#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
