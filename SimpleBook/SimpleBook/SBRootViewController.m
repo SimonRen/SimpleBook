@@ -12,8 +12,11 @@
 
 #import "SBDataViewController.h"
 
+#import "MWPhotoBrowser.h"
+
 SBRootViewController *theRootViewController = nil;
 UIPageViewController *thePageViewController = nil;
+MWPhotoBrowser *thePhotoBrowser = nil;
 
 @interface SBRootViewController ()
 @property (readonly, strong, nonatomic) SBModelController *modelController;
@@ -76,9 +79,10 @@ UIPageViewController *thePageViewController = nil;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     // Configure the page view controller and add it as a child view controller.
-    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
 
     SBDataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
@@ -87,15 +91,20 @@ UIPageViewController *thePageViewController = nil;
 
     self.pageViewController.dataSource = self.modelController;
 
-    [self addChildViewController:self.pageViewController];
-    [self.view addSubview:self.pageViewController.view];
+    self.navigationBarHidden = YES;
+    [self pushViewController:self.pageViewController animated:YES];
+    
+    //[self addChildViewController:self.pageViewController];
+    //[self.view addSubview:self.pageViewController.view];
+    
+    //MWPhotoBrowser *browser = [MWPhotoBrowser alloc];
 
     // Set the page view controller's bounds using an inset rect so that self's view is visible around the edges of the pages.
-    CGRect pageViewRect = self.view.bounds;
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        pageViewRect = CGRectInset(pageViewRect, 40.0, 40.0);
-    }
-    self.pageViewController.view.frame = pageViewRect;
+    //CGRect pageViewRect = self.view.bounds;
+    //if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+    //    pageViewRect = CGRectInset(pageViewRect, 40.0, 40.0);
+    //}
+    //self.pageViewController.view.frame = pageViewRect;
 
     [self.pageViewController didMoveToParentViewController:self];    
 

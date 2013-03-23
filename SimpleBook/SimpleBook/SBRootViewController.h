@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SBRootViewController : UIViewController <UIPageViewControllerDelegate>
+@interface SBRootViewController : UINavigationController <UIPageViewControllerDelegate>
 
 - (void) fadeOut:(int)page;
 - (void) fadeIn;

@@ -11,6 +11,7 @@
 @interface SBDataViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView *defaultView;
+@property (weak, nonatomic) IBOutlet UIViewController *rootViewControl;
 @property (strong, nonatomic) id dataObject;
 
 @end

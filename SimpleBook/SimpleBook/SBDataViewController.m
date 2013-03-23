@@ -9,10 +9,15 @@
 #import "SBDataViewController.h"
 #import "LuaBridge.h"
 
+#import "SBRootViewController.h"
+
+#import "SBPanel.h"
+
 @implementation SBDataViewController
 
 @synthesize defaultView = _defaultView;
 @synthesize dataObject = _dataObject;
+@synthesize rootViewControl = _rootViewControl;
 
 - (void)didReceiveMemoryWarning
 {
@@ -34,12 +39,45 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    _rootViewControl = [SBRootViewController sharedRootVC];
+    ((UINavigationController*)_rootViewControl).navigationBarHidden = YES;
     [[LuaBridge sharedLua] callLuaVSP:@"LoadPage" param1:_dataObject param2:(__bridge void *)self];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    
+    SBPanel* panel = nil;
+    
+    NSArray* arr = [_defaultView subviews];
+    for(UIView* view in arr) {
+        if ([view isKindOfClass:[SBPanel class]]) {
+            panel = (SBPanel*)view;
+            break;
+        }
+    }
+    
+    if (panel) {
+        
+        //说明panel存在
+        
+        CGPoint touchPoint = [touch locationInView:_defaultView];
+    
+        if (CGRectContainsPoint(panel.frame, touchPoint)) {
+            
+            
+        }
+        else{
+            [panel removeFromSuperview];
+        }
+    }
+
 }
 
 - (void)viewDidAppear:(BOOL)animated

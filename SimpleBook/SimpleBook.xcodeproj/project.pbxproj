@@ -33,6 +33,14 @@
 		BB18885A50164624102C3F9D /* LuaBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1889F127D331E5A055A820 /* LuaBridge.m */; };
 		BB188C0F01CD40245E0A739C /* MovieObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1884A31FEE1BFF556B229A /* MovieObserver.m */; };
 		BB188F753AAFC6D4C2149509 /* BlockInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB188C3ADF29DAEAD75BF2FD /* BlockInvocation.m */; };
+		CD1AD2FA16FC531C00648777 /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = CD1AD2D716FC531C00648777 /* README.mdown */; };
+		CD1AD2FB16FC531C00648777 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CD1AD2D916FC531C00648777 /* .gitignore */; };
+		CD1AD2FC16FC531C00648777 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CD1AD2DA16FC531C00648777 /* LICENSE */; };
+		CD1AD2FD16FC531C00648777 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CD1AD2DB16FC531C00648777 /* README.md */; };
+		CD1AD30516FC531C00648777 /* MWPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD1AD2EF16FC531C00648777 /* MWPhotoBrowser.bundle */; };
+		CD1AD30916FC5ECF00648777 /* libMWPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD30816FC531C00648777 /* libMWPhotoBrowser.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		CD9BDAB416FD567D00739E54 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9BDAB316FD567D00739E54 /* MessageUI.framework */; };
+		CD9BDAD216FDAF3B00739E54 /* SBPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9BDAD116FDAF3A00739E54 /* SBPanel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +50,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 50B1C78F1699746F0096BF93;
 			remoteInfo = SimpleBook;
+		};
+		CD1AD30716FC531C00648777 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD1AD2F016FC531C00648777 /* MWPhotoBrowser.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C6F96C414AF704100F8389A;
+			remoteInfo = MWPhotoBrowser;
+		};
+		CD1AD30A16FC5F6B00648777 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD1AD2F016FC531C00648777 /* MWPhotoBrowser.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C6F96C314AF704100F8389A;
+			remoteInfo = MWPhotoBrowser;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -93,6 +115,49 @@
 		BB188C3ADF29DAEAD75BF2FD /* BlockInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockInvocation.m; sourceTree = "<group>"; };
 		BB188D09FDEF860C6742B5F2 /* BlockInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockInvocation.h; sourceTree = "<group>"; };
 		BB188EC3A6D18A0903473156 /* LuaBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaBridge.h; sourceTree = "<group>"; };
+		CD1AD2C616FC531C00648777 /* MWCaptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCaptionView.h; sourceTree = "<group>"; };
+		CD1AD2C716FC531C00648777 /* MWCaptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCaptionView.m; sourceTree = "<group>"; };
+		CD1AD2C816FC531C00648777 /* MWPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhoto.h; sourceTree = "<group>"; };
+		CD1AD2C916FC531C00648777 /* MWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhoto.m; sourceTree = "<group>"; };
+		CD1AD2CA16FC531C00648777 /* MWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowser.h; sourceTree = "<group>"; };
+		CD1AD2CB16FC531C00648777 /* MWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowser.m; sourceTree = "<group>"; };
+		CD1AD2CC16FC531C00648777 /* MWPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoProtocol.h; sourceTree = "<group>"; };
+		CD1AD2CD16FC531C00648777 /* MWTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTapDetectingImageView.h; sourceTree = "<group>"; };
+		CD1AD2CE16FC531C00648777 /* MWTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTapDetectingImageView.m; sourceTree = "<group>"; };
+		CD1AD2CF16FC531C00648777 /* MWTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTapDetectingView.h; sourceTree = "<group>"; };
+		CD1AD2D016FC531C00648777 /* MWTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTapDetectingView.m; sourceTree = "<group>"; };
+		CD1AD2D116FC531C00648777 /* MWZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWZoomingScrollView.h; sourceTree = "<group>"; };
+		CD1AD2D216FC531C00648777 /* MWZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWZoomingScrollView.m; sourceTree = "<group>"; };
+		CD1AD2D516FC531C00648777 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		CD1AD2D616FC531C00648777 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		CD1AD2D716FC531C00648777 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.mdown; sourceTree = "<group>"; };
+		CD1AD2D916FC531C00648777 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CD1AD2DA16FC531C00648777 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CD1AD2DB16FC531C00648777 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		CD1AD2DC16FC531C00648777 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		CD1AD2DD16FC531C00648777 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		CD1AD2DE16FC531C00648777 /* SDImageCacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCacheDelegate.h; sourceTree = "<group>"; };
+		CD1AD2DF16FC531C00648777 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		CD1AD2E016FC531C00648777 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		CD1AD2E116FC531C00648777 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		CD1AD2E216FC531C00648777 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		CD1AD2E316FC531C00648777 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		CD1AD2E416FC531C00648777 /* SDWebImageDownloaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderDelegate.h; sourceTree = "<group>"; };
+		CD1AD2E516FC531C00648777 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		CD1AD2E616FC531C00648777 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		CD1AD2E716FC531C00648777 /* SDWebImageManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManagerDelegate.h; sourceTree = "<group>"; };
+		CD1AD2E816FC531C00648777 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		CD1AD2E916FC531C00648777 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		CD1AD2EA16FC531C00648777 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		CD1AD2EB16FC531C00648777 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		CD1AD2EC16FC531C00648777 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		CD1AD2ED16FC531C00648777 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		CD1AD2EE16FC531C00648777 /* MWPhotoBrowser-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MWPhotoBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		CD1AD2EF16FC531C00648777 /* MWPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MWPhotoBrowser.bundle; sourceTree = "<group>"; };
+		CD1AD2F016FC531C00648777 /* MWPhotoBrowser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MWPhotoBrowser.xcodeproj; sourceTree = "<group>"; };
+		CD9BDAB316FD567D00739E54 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		CD9BDAD016FDAF3A00739E54 /* SBPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPanel.h; sourceTree = "<group>"; };
+		CD9BDAD116FDAF3A00739E54 /* SBPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPanel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +165,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9BDAB416FD567D00739E54 /* MessageUI.framework in Frameworks */,
+				CD1AD30916FC5ECF00648777 /* libMWPhotoBrowser.a in Frameworks */,
 				5023001716B7A9C8001F1226 /* MediaPlayer.framework in Frameworks */,
 				5023001516B7A9C1001F1226 /* CoreFoundation.framework in Frameworks */,
 				50F3BCC1169D66A300E16146 /* CoreGraphics.framework in Frameworks */,
@@ -126,6 +193,7 @@
 		50B1C7851699746F0096BF93 = {
 			isa = PBXGroup;
 			children = (
+				CD9BDAB316FD567D00739E54 /* MessageUI.framework */,
 				506E2ECD169C3A1D00D2D1CE /* System */,
 				50B1C7E6169982720096BF93 /* data */,
 				50B1C7DB16997D850096BF93 /* 3rd */,
@@ -161,6 +229,7 @@
 		50B1C79A1699746F0096BF93 /* SimpleBook */ = {
 			isa = PBXGroup;
 			children = (
+				CD1AD2C416FC531C00648777 /* MWPhotoBrowser */,
 				50B1C7A31699746F0096BF93 /* SBAppDelegate.h */,
 				50B1C7A41699746F0096BF93 /* SBAppDelegate.m */,
 				50B1C7A61699746F0096BF93 /* SBRootViewController.h */,
@@ -178,6 +247,8 @@
 				BB188D09FDEF860C6742B5F2 /* BlockInvocation.h */,
 				BB1884A31FEE1BFF556B229A /* MovieObserver.m */,
 				BB18840A534789946776AF33 /* MovieObserver.h */,
+				CD9BDAD016FDAF3A00739E54 /* SBPanel.h */,
+				CD9BDAD116FDAF3A00739E54 /* SBPanel.m */,
 			);
 			path = SimpleBook;
 			sourceTree = "<group>";
@@ -249,6 +320,93 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		CD1AD2C416FC531C00648777 /* MWPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AD2C516FC531C00648777 /* Classes */,
+				CD1AD2D316FC531C00648777 /* Libraries */,
+				CD1AD2EE16FC531C00648777 /* MWPhotoBrowser-Prefix.pch */,
+				CD1AD2EF16FC531C00648777 /* MWPhotoBrowser.bundle */,
+				CD1AD2F016FC531C00648777 /* MWPhotoBrowser.xcodeproj */,
+			);
+			path = MWPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		CD1AD2C516FC531C00648777 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AD2C616FC531C00648777 /* MWCaptionView.h */,
+				CD1AD2C716FC531C00648777 /* MWCaptionView.m */,
+				CD1AD2C816FC531C00648777 /* MWPhoto.h */,
+				CD1AD2C916FC531C00648777 /* MWPhoto.m */,
+				CD1AD2CA16FC531C00648777 /* MWPhotoBrowser.h */,
+				CD1AD2CB16FC531C00648777 /* MWPhotoBrowser.m */,
+				CD1AD2CC16FC531C00648777 /* MWPhotoProtocol.h */,
+				CD1AD2CD16FC531C00648777 /* MWTapDetectingImageView.h */,
+				CD1AD2CE16FC531C00648777 /* MWTapDetectingImageView.m */,
+				CD1AD2CF16FC531C00648777 /* MWTapDetectingView.h */,
+				CD1AD2D016FC531C00648777 /* MWTapDetectingView.m */,
+				CD1AD2D116FC531C00648777 /* MWZoomingScrollView.h */,
+				CD1AD2D216FC531C00648777 /* MWZoomingScrollView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CD1AD2D316FC531C00648777 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AD2D416FC531C00648777 /* MBProgressHUD */,
+				CD1AD2D816FC531C00648777 /* SDWebImage */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		CD1AD2D416FC531C00648777 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AD2D516FC531C00648777 /* MBProgressHUD.h */,
+				CD1AD2D616FC531C00648777 /* MBProgressHUD.m */,
+				CD1AD2D716FC531C00648777 /* README.mdown */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		CD1AD2D816FC531C00648777 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AD2D916FC531C00648777 /* .gitignore */,
+				CD1AD2DA16FC531C00648777 /* LICENSE */,
+				CD1AD2DB16FC531C00648777 /* README.md */,
+				CD1AD2DC16FC531C00648777 /* SDImageCache.h */,
+				CD1AD2DD16FC531C00648777 /* SDImageCache.m */,
+				CD1AD2DE16FC531C00648777 /* SDImageCacheDelegate.h */,
+				CD1AD2DF16FC531C00648777 /* SDWebImageCompat.h */,
+				CD1AD2E016FC531C00648777 /* SDWebImageDecoder.h */,
+				CD1AD2E116FC531C00648777 /* SDWebImageDecoder.m */,
+				CD1AD2E216FC531C00648777 /* SDWebImageDownloader.h */,
+				CD1AD2E316FC531C00648777 /* SDWebImageDownloader.m */,
+				CD1AD2E416FC531C00648777 /* SDWebImageDownloaderDelegate.h */,
+				CD1AD2E516FC531C00648777 /* SDWebImageManager.h */,
+				CD1AD2E616FC531C00648777 /* SDWebImageManager.m */,
+				CD1AD2E716FC531C00648777 /* SDWebImageManagerDelegate.h */,
+				CD1AD2E816FC531C00648777 /* SDWebImagePrefetcher.h */,
+				CD1AD2E916FC531C00648777 /* SDWebImagePrefetcher.m */,
+				CD1AD2EA16FC531C00648777 /* UIButton+WebCache.h */,
+				CD1AD2EB16FC531C00648777 /* UIButton+WebCache.m */,
+				CD1AD2EC16FC531C00648777 /* UIImageView+WebCache.h */,
+				CD1AD2ED16FC531C00648777 /* UIImageView+WebCache.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		CD1AD2F116FC531C00648777 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AD30816FC531C00648777 /* libMWPhotoBrowser.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +421,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CD1AD30B16FC5F6B00648777 /* PBXTargetDependency */,
 			);
 			name = SimpleBook;
 			productName = SimpleBook;
@@ -307,6 +466,12 @@
 			mainGroup = 50B1C7851699746F0096BF93;
 			productRefGroup = 50B1C7911699746F0096BF93 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CD1AD2F116FC531C00648777 /* Products */;
+					ProjectRef = CD1AD2F016FC531C00648777 /* MWPhotoBrowser.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				50B1C78F1699746F0096BF93 /* SimpleBook */,
@@ -314,6 +479,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CD1AD30816FC531C00648777 /* libMWPhotoBrowser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMWPhotoBrowser.a;
+			remoteRef = CD1AD30716FC531C00648777 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		50B1C78E1699746F0096BF93 /* Resources */ = {
@@ -325,6 +500,11 @@
 				50B1C7B41699746F0096BF93 /* MainStoryboard_iPad.storyboard in Resources */,
 				50B1C7E7169982720096BF93 /* data in Resources */,
 				506E2ECE169C3A1D00D2D1CE /* System in Resources */,
+				CD1AD2FA16FC531C00648777 /* README.mdown in Resources */,
+				CD1AD2FB16FC531C00648777 /* .gitignore in Resources */,
+				CD1AD2FC16FC531C00648777 /* LICENSE in Resources */,
+				CD1AD2FD16FC531C00648777 /* README.md in Resources */,
+				CD1AD30516FC531C00648777 /* MWPhotoBrowser.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +548,7 @@
 				506E2EC3169C2A8000D2D1CE /* lxplib.c in Sources */,
 				BB188F753AAFC6D4C2149509 /* BlockInvocation.m in Sources */,
 				BB188C0F01CD40245E0A739C /* MovieObserver.m in Sources */,
+				CD9BDAD216FDAF3B00739E54 /* SBPanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +567,11 @@
 			isa = PBXTargetDependency;
 			target = 50B1C78F1699746F0096BF93 /* SimpleBook */;
 			targetProxy = 50B1C7BF169974700096BF93 /* PBXContainerItemProxy */;
+		};
+		CD1AD30B16FC5F6B00648777 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MWPhotoBrowser;
+			targetProxy = CD1AD30A16FC5F6B00648777 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

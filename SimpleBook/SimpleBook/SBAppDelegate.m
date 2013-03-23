@@ -9,6 +9,9 @@
 #import "SBAppDelegate.h"
 #import "MovieObserver.h"
 
+
+#import "MWPhotoBrowser.h"
+
 @implementation SBAppDelegate
 
 @synthesize window = _window;
@@ -19,6 +22,11 @@
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
 
     [[MovieObserver sharedMovieObserver] register];
+    
+    
+    
+    MWPhoto *photo = [MWPhoto alloc];
+    MWPhotoBrowser *browser = [MWPhotoBrowser alloc];
 
     return YES;
 }
