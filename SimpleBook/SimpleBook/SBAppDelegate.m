@@ -12,6 +12,8 @@
 
 #import "MWPhotoBrowser.h"
 
+#import <AVFoundation/AVAudioPlayer.h>
+
 @implementation SBAppDelegate
 
 @synthesize window = _window;
@@ -22,8 +24,6 @@
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
 
     [[MovieObserver sharedMovieObserver] register];
-    
-    
     
     MWPhoto *photo = [MWPhoto alloc];
     MWPhotoBrowser *browser = [MWPhotoBrowser alloc];

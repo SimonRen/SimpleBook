@@ -12,5 +12,6 @@ require "system.control.image"
 require "system.control.anim"
 require "system.control.button"
 require "system.control.movie"
+require "system.control.panel"
 require "system.control.photobrowser"
 

@@ -41,6 +41,7 @@
 		CD1AD30916FC5ECF00648777 /* libMWPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD30816FC531C00648777 /* libMWPhotoBrowser.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		CD9BDAB416FD567D00739E54 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9BDAB316FD567D00739E54 /* MessageUI.framework */; };
 		CD9BDAD216FDAF3B00739E54 /* SBPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9BDAD116FDAF3A00739E54 /* SBPanel.m */; };
+		CD9CE00516FF0035002089B8 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9CE00416FF0034002089B8 /* CoreAudio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +159,7 @@
 		CD9BDAB316FD567D00739E54 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		CD9BDAD016FDAF3A00739E54 /* SBPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPanel.h; sourceTree = "<group>"; };
 		CD9BDAD116FDAF3A00739E54 /* SBPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPanel.m; sourceTree = "<group>"; };
+		CD9CE00416FF0034002089B8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9CE00516FF0035002089B8 /* CoreAudio.framework in Frameworks */,
 				CD9BDAB416FD567D00739E54 /* MessageUI.framework in Frameworks */,
 				CD1AD30916FC5ECF00648777 /* libMWPhotoBrowser.a in Frameworks */,
 				5023001716B7A9C8001F1226 /* MediaPlayer.framework in Frameworks */,
@@ -193,6 +196,7 @@
 		50B1C7851699746F0096BF93 = {
 			isa = PBXGroup;
 			children = (
+				CD9CE00416FF0034002089B8 /* CoreAudio.framework */,
 				CD9BDAB316FD567D00739E54 /* MessageUI.framework */,
 				506E2ECD169C3A1D00D2D1CE /* System */,
 				50B1C7E6169982720096BF93 /* data */,

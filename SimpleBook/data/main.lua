@@ -11,6 +11,7 @@ bs.loadFramework( "System/Library/Frameworks/Foundation.framework", true, true )
 bs.loadFramework( "System/Library/Frameworks/CoreGraphics.framework", true, true )
 bs.loadFramework( "System/Library/Frameworks/UIKit.framework", true, true )
 bs.loadFramework( "System/Library/Frameworks/MediaPlayer.framework", true, true )
+bs.loadFramework( "System/Library/Frameworks/CoreAudio.framework", true, true )
 BridgeSupport = bs
 
 --------------------------------------------------------------------------------

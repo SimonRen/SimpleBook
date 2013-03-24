@@ -23,3 +23,43 @@ NewMovie = function(param)
 
     ViewAdd(player:view(), param.panel)
 end
+
+local player = nil
+
+
+StartPlayMusic = function(path)
+
+    StopMusic()
+    local data = NSData:dataWithContentsOfFile(NSStr("data/book/misc/"..path))
+    
+    print(AVAudioPlayer)
+    
+    player = AVAudioPlayer:alloc()
+    
+    player:initWithData_error(data, nil)
+    
+    player:play()
+
+end
+
+StopMusic = function()
+    
+    if player then
+        player:stop()
+        player = nil
+    end
+
+end
+
+PauseMusic = function()
+    if player and player.playing then
+        player:pause()
+    end
+end
+
+PlayMusic = function()
+    if player then
+        player:play()
+    end
+end
+
