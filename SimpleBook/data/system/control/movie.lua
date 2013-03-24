@@ -21,5 +21,5 @@ NewMovie = function(param)
     player.fullscreen = true
     player.shouldAutoplay = false
 
-    ViewAdd( player:view() )
+    ViewAdd(player:view(), param.panel)
 end

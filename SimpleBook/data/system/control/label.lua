@@ -59,5 +59,5 @@ NewLabel = function( param )
         label:addGestureRecognizer( recognizer )
     end
 
-    ViewAdd( label )
+    ViewAdd(label, param.panel)
 end

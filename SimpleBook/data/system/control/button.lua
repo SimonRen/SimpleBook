@@ -46,6 +46,6 @@ NewButton = function( param )
         button:addTarget_action_forControlEvents( block_invocate, SEL("perform"), UIControlEventTouchUpInside )
     end
 
-    ViewAdd( button )
+    ViewAdd(button, param.panel)
 end
 

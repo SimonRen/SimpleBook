@@ -53,5 +53,5 @@ NewImage = function( param )
         imageview:addGestureRecognizer( recognizer )
     end
 
-    ViewAdd( imageview )
+    ViewAdd(imageview, param.panel)
 end

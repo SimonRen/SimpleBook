@@ -36,8 +36,12 @@ ViewGet = function()
     return currentDefaultView
 end
 
-ViewAdd = function( control )
-    currentDefaultView:addSubview( control )
+ViewAdd = function( control, panel)
+    if panel then
+        panel:addSubview(control)
+    else
+        currentDefaultView:addSubview( control )
+    end
 end
 
 ViewCtlAdd = function(viewctl)

@@ -135,5 +135,5 @@ NewAnim = function( param )
         imageview:startAnimating()
     end
 
-    ViewAdd( imageview )
+    ViewAdd(imageview, param.panel)
 end

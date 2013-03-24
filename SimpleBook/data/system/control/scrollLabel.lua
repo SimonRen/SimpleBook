@@ -43,5 +43,5 @@ NewScrollLabel = function( param )
 
     label.textAlignment = AlignmentGet( param.alignment )
 
-    ViewAdd( label )
+    ViewAdd(label, param.panel)
 end

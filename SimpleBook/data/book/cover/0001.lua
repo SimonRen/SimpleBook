@@ -37,7 +37,7 @@ return function()
         } end,
     }
     
-        NewLabel {
+    NewLabel {
             text = "点击访问百度",
             size = { 200, 100 },
             pos = { 300, 600 },
@@ -59,9 +59,36 @@ return function()
             font = "SimSun",
             fontSize = 20,
             clicked = function()
-                NewPanel {
+                local _panel = NewPanel {
     
                 }
+
+        NewLabel {
+            text = "点击访问百度",
+            size = { 200, 100 },
+            pos = { 300, 600 },
+            color = "black",
+            font = "SimSun",
+            fontSize = 20,
+            panel = _panel,
+            clicked = function()
+                print('click')
+                OpenUrl("http://www.baidu.com")
+            end,
+    
+    }
+    
+    NewButton {
+        image = "click_to_play.png",
+        size = { 200, 100 },
+        pos = { 40, 600 },
+        panel = _panel,
+        clicked = function() NewPhotoBrowser {
+            images = {"photo1l.jpg", "photo2l.jpg", "photo3l.jpg", "photo4l.jpg"},
+        } end,
+    }
+
+
 
             end,
     
