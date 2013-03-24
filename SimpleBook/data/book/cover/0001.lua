@@ -21,5 +21,6 @@ return function()
         pos = {30,140},
         movie = "test.m4v",
         auto = true,
+        style = MPMovieControlStyleNone,
     }    
 end
