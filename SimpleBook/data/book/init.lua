@@ -10,6 +10,6 @@ require "book.cover"
 require "book.index"
 require "book.content"
 
-BOOK_COVER_PAGES = 1
+BOOK_COVER_PAGES = 2
 BOOK_INDEX_PAGES = 1
 BOOK_CONTENT_PAGES = 1

@@ -6,6 +6,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "MovieObserver.h"
 #import "SBRootViewController.h"
+#import "LuaBridge.h"
 
 MovieObserver *theMovieObserver = nil;
 
@@ -53,10 +54,13 @@ MovieObserver *theMovieObserver = nil;
     int reason = [[[notification userInfo] valueForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey] intValue];
     if (reason == MPMovieFinishReasonPlaybackEnded) {
         //movie finished playing
+        [[LuaBridge sharedLua] callLuaVV:@"MovieDone" ];
     }else if (reason == MPMovieFinishReasonUserExited) {
         //user hit the done button
+        [[LuaBridge sharedLua] callLuaVV:@"MovieDone" ];
     }else if (reason == MPMovieFinishReasonPlaybackError) {
         //error
+        [[LuaBridge sharedLua] callLuaVV:@"MovieDone" ];
     }
 
     MPMoviePlayerController *player = [notification object];
