@@ -47,6 +47,19 @@ return function()
     }
     
     NewLabel {
+            text = "点击下面按钮打开image galary",
+            size = { 200, 100 },
+            pos = { 100, 500 },
+            color = "black",
+            font = "SimSun",
+            fontSize = 20,
+            clicked = function()
+                print('click')
+            end,
+    
+    }
+    
+    NewLabel {
             text = "点击放音乐",
             size = { 200, 100 },
             pos = { 300, 640 },
