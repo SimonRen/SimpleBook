@@ -182,8 +182,8 @@ return function()
                 }
                 
                 NewButton {
-                    image = "click_to_play.png",
-                    size = { 200, 100 },
+                    image = "buttonD1Gallery.png",
+                    size = { 108, 109 },
                     pos = { 40, 600 },
                     panel = _panel,
                     clicked = function() NewPhotoBrowser {

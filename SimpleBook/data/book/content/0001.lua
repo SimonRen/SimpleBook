@@ -46,7 +46,8 @@ return function()
     NewAnim {
         size = {30,30},
         pos = {200,200},
-        fmt_images = {"wind/wind%04d.png", 1, 25},
+
+        fmt_images = {"niu/BFinal Color Output%04d.png", 1, 36},
         anim = 'auto',
         interval = 0.5,
         repeatCount = 0,

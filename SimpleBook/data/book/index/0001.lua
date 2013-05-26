@@ -44,7 +44,7 @@ return function()
     NewAnim {
         size = {30,30},
         pos = {200,200},
-        fmt_images = {"wind/wind%04d.png", 1, 25},
+        fmt_images = {"nice/Step %02d.jpg", 1, 6},
         anim = 'swipe',
         interval = 0.1,
         repeatCount = 0,
