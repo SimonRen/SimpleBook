@@ -66,7 +66,10 @@ LoadPage = function(pagepath, view)
             end
         
             print("insert:"..curr_page_path)
-            table.insert(page_history, curr_page_path)
+            
+            if (curr_page_path ~= "") then
+                table.insert(page_history, curr_page_path)
+            end
         --end
         
         curr_page_path = pagepath
