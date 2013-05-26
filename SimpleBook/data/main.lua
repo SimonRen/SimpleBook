@@ -60,7 +60,8 @@ local curr_page_index = 0
 
 LoadPage = function(pagepath, view)
     if is_goto_page == 0 then
-        --if curr_page_path ~= "" then
+          curr_page_path = pagepath
+          if curr_page_path ~= "" then
             if (#page_history == 5) then
                 table.remove(page_history, 1)
             end
@@ -70,9 +71,7 @@ LoadPage = function(pagepath, view)
             if (curr_page_path ~= "") then
                 table.insert(page_history, curr_page_path)
             end
-        --end
-        
-        curr_page_path = pagepath
+          end
         
         print('curr_page_path:'..curr_page_path)
     end
@@ -115,7 +114,7 @@ end
 GotoPagePre = function()
     local try_pre = 0
     if curr_page_index == 0 then
-        try_pre = #page_history
+        try_pre = #page_history - 1
     else
         try_pre = curr_page_index - 1
     end
