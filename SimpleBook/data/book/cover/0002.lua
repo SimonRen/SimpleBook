@@ -17,9 +17,9 @@ return function()
     }
 
     NewLabel {
-        text = "cover, 点击可跳到下一页",
+        text = "点击可跳到下一页",
         size = { 200, 100 },
-        pos = { 40, 40 },
+        pos = { 40, 60 },
         color = "black",
         font = "SimSun",
         fontSize = 20,
@@ -31,17 +31,8 @@ return function()
 
     NewMovie {
         size = {288,180},
-        pos = {30,140},
+        pos = {30,200},
         movie = "test.m4v",
-    }
-    
-    NewButton {
-        image = "click_to_play.png",
-        size = { 200, 100 },
-        pos = { 40, 600 },
-        clicked = function() NewPhotoBrowser {
-            images = {"car_002_1.jpg", "car_002_2.jpg", "car_002_3.jpg", "car_002_4.jpg"},
-        } end,
     }
     
     NewLabel {
@@ -54,19 +45,6 @@ return function()
             clicked = function()
                 print('click')
                 OpenUrl("http://www.baidu.com")
-            end,
-    
-    }
-    
-    NewLabel {
-            text = "点击下面按钮打开image galary",
-            size = { 200, 100 },
-            pos = { 100, 500 },
-            color = "black",
-            font = "SimSun",
-            fontSize = 20,
-            clicked = function()
-                print('click')
             end,
     
     }
@@ -147,6 +125,25 @@ return function()
         size = {108, 109},
         pos = {55+72+72, 0},
         image = 'buttonD1Gallery.png',
+        clicked = function() NewPhotoBrowser {
+                        images = {"car_002_1.jpg", "car_002_2.jpg", "car_002_3.jpg", "car_002_4.jpg"},
+                    } end,
+    }
+    
+    NewButton {
+        size = {108, 109},
+        pos = {55+72+72+108, 0},
+        image = 'buttonD2Movie.png',
+        clicked = function() 
+            NewMovie {
+                size = {288,180},
+                pos = {30,140},
+                movie = "video 01.mp4",
+                auto = true,
+                style = MPMovieControlStyleDefault,
+            }  
+        
+        end
     }
 
     NewLabel {
@@ -193,7 +190,7 @@ return function()
                         images = {"car_002_1.jpg", "car_002_2.jpg", "car_002_3.jpg", "car_002_4.jpg"},
                     } end,
                 }
-end,
+    end,
     
 }
  
