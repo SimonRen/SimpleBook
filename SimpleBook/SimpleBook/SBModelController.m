@@ -62,6 +62,12 @@
     return [self.pageData indexOfObject:viewController.dataObject];
 }
 
+- (void) removeCover1
+{
+    _pageData = [[NSMutableArray alloc] init];
+    [[LuaBridge sharedLua] callLuaVP:@"PreparePageDataNoCover1" param:(__bridge void *)_pageData];
+}
+
 #pragma mark - Page View Controller Data Source
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController

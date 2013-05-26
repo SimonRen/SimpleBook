@@ -37,7 +37,7 @@ return function()
     NewScrollLabel {
         text = "content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890content1234567890",
         size = { 200, 100 },
-        pos = { 40, 40 },
+        pos = { 40, 80 },
         color = "black",
         font = "SimSun",
         fontSize = 20,
@@ -45,7 +45,7 @@ return function()
 
     NewAnim {
         size = {30,30},
-        pos = {200,200},
+        pos = {200,400},
 
         fmt_images = {"niu/BFinal Color Output%04d.png", 1, 36},
         anim = 'auto',

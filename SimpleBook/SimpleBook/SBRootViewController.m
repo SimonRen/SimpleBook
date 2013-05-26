@@ -63,6 +63,11 @@ MWPhotoBrowser *thePhotoBrowser = nil;
     SBDataViewController *targetPageViewController = [self.modelController viewControllerAtIndex:(pageToGoTo - 1) storyboard:self.storyboard];
     SBDataViewController *nextPageViewController = [self.modelController viewControllerAtIndex:(pageToGoTo) storyboard:self.storyboard];
 
+    // 到了cover2，就删除cover1
+    if ([targetPageViewController.dataObject isEqual: @"book.cover.0002"]) {
+        [self.modelController removeCover1];
+    }
+    
     NSArray* preViewControllers = [NSArray arrayWithObjects:prePageViewController, nil];
     
     NSArray* theViewControllers = nil;

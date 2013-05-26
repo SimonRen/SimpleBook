@@ -30,7 +30,6 @@ PreparePageData = function( pageData )
     local content_fmt = "book.content.%04d"
     local pagepath
 
-    --cover不出现
     for i = 1, BOOK_COVER_PAGES do
         pagepath = string.format( cover_fmt, i )
         pageData:addObject( NSStr(pagepath) )
@@ -47,6 +46,35 @@ PreparePageData = function( pageData )
     end
 
     print( "pageData OK, count is " .. tostring(pageData:count()) )
+end
+
+PreparePageDataNoCover1 = function( pageData )
+    local pageData = IdCast( pageData )
+
+    local cover_fmt = "book.cover.%04d"
+    local index_fmt = "book.index.%04d"
+    local content_fmt = "book.content.%04d"
+    local pagepath
+
+    --cover不出现
+    for i = 2, BOOK_COVER_PAGES do
+        pagepath = string.format( cover_fmt, i )
+        pageData:addObject( NSStr(pagepath) )
+    end
+
+    for i = 1, BOOK_INDEX_PAGES do
+        pagepath = string.format( index_fmt, i )
+        pageData:addObject( NSStr(pagepath) )
+    end
+
+    for i = 1, BOOK_CONTENT_PAGES do
+        pagepath = string.format( content_fmt, i )
+        pageData:addObject( NSStr(pagepath) )
+    end
+
+    print( "pageData OK, count is " .. tostring(pageData:count()) )
+    
+    page_history = {}
 end
 
 --------------------------------------------------------------------------------

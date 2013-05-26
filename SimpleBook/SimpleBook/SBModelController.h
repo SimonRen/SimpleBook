@@ -13,4 +13,6 @@
 @interface SBModelController : NSObject <UIPageViewControllerDataSource>
 - (SBDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (NSUInteger)indexOfViewController:(SBDataViewController *)viewController;
+
+- (void) removeCover1;
 @end
