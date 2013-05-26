@@ -16,10 +16,16 @@ MovieDone = function()
 end
 
 return function()
+
+    do
+    
+        return
+    end
+  
     NewMovie {
         size = {288,180},
         pos = {30,140},
-        movie = "test.m4v",
+        movie = "video 01.mp4",
         auto = true,
         style = MPMovieControlStyleNone,
     }    

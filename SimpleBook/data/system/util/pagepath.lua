@@ -27,6 +27,7 @@ PagepathToPage = function( pagepath )
     if not basepage then return 0 end
 
     local totalpage = basepage + tonumber(page)
-
+    
+    print('totalpage:'..tostring(totalpage))
     return totalpage
 end

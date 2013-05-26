@@ -30,6 +30,7 @@ PreparePageData = function( pageData )
     local content_fmt = "book.content.%04d"
     local pagepath
 
+    --cover不出现
     for i = 1, BOOK_COVER_PAGES do
         pagepath = string.format( cover_fmt, i )
         pageData:addObject( NSStr(pagepath) )
@@ -50,7 +51,29 @@ end
 
 --------------------------------------------------------------------------------
 
+page_history = {}
+
+local is_goto_page = 0
+
+local curr_page_path = ""
+local curr_page_index = 0
+
 LoadPage = function(pagepath, view)
+    if is_goto_page == 0 then
+        --if curr_page_path ~= "" then
+            if (#page_history == 5) then
+                table.remove(page_history, 1)
+            end
+        
+            print("insert:"..curr_page_path)
+            table.insert(page_history, curr_page_path)
+        --end
+        
+        curr_page_path = pagepath
+        
+        print('curr_page_path:'..curr_page_path)
+    end
+
     -- reset current view
     ViewChange( IdCast(view) )
     ViewReset()
@@ -64,11 +87,54 @@ LoadPage = function(pagepath, view)
 
     -- show
     ViewShow()
+    
+    if (is_goto_page >= 1) then
+        is_goto_page = is_goto_page - 1
+    end
 end
 
 GotoPage = function( pagepath )
+
+    is_goto_page = 1
     local page = PagepathToPage(pagepath)
     SBRootViewController:sharedRootVC():pageGoto(page)
+
+end
+
+GotoPageNotRecord = function( pagepath )
+
+    is_goto_page = 2
+    local page = PagepathToPage(pagepath)
+    SBRootViewController:sharedRootVC():pageGoto(page)
+    
+end
+
+GotoPagePre = function()
+    local try_pre = 0
+    if curr_page_index == 0 then
+        try_pre = #page_history
+    else
+        try_pre = curr_page_index - 1
+    end
+
+    print("try_pre:"..tostring(try_pre)..'_'..tostring(page_history[try_pre]))
+    
+    if page_history[try_pre] ~= nil then
+        curr_page_index = try_pre
+        GotoPageNotRecord(page_history[curr_page_index])
+    end
+end
+
+GotoPageNext = function()
+    local try_next = curr_page_index + 1
+    
+    print("try_next:"..tostring(try_next)..'_'..tostring(page_history[try_next]))
+
+    if page_history[try_next] ~= nil then
+        curr_page_index = try_next
+        GotoPageNotRecord(page_history[curr_page_index])
+    end
+
 end
 
 --------------------------------------------------------------------------------

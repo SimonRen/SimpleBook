@@ -23,7 +23,7 @@
 {
     self = [super initWithFrame:CGRectMake(valuex, valuey, valuew, valueh)];
     if (self) {
-        self.backgroundColor = [UIColor colorWithRed:255 green:0 blue:0 alpha:1];
+        self.backgroundColor = [UIColor colorWithRed:255 green:0 blue:0 alpha:0];
         
     }
     return self;

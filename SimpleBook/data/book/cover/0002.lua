@@ -7,6 +7,15 @@
 --
 
 return function()
+    NewImage {
+        image = "basicPage",
+        size = { 768, 1024 },
+        pos = { 768/2, 1024/2 },
+        ---clicked = function() 
+        
+        ---end,
+    }
+
     NewLabel {
         text = "cover, 点击可跳到下一页",
         size = { 200, 100 },
@@ -14,7 +23,10 @@ return function()
         color = "black",
         font = "SimSun",
         fontSize = 20,
-        clicked = function() PageGoto(2) end,
+        clicked = function() 
+            print('goto page')
+            GotoPage('book.content.0001') 
+        end,
     }
 
     NewMovie {
@@ -28,7 +40,7 @@ return function()
         size = { 200, 100 },
         pos = { 40, 600 },
         clicked = function() NewPhotoBrowser {
-            images = {"photo1l.jpg", "photo2l.jpg", "photo3l.jpg", "photo4l.jpg"},
+            images = {"car_002_1.jpg", "car_002_2.jpg", "car_002_3.jpg", "car_002_4.jpg"},
         } end,
     }
     
@@ -104,6 +116,39 @@ return function()
     
     }
     
+    --按钮合集
+    NewButton {
+        name = 'button music',
+        size = {56, 55},
+        pos = {0, 0},
+        image = 'ButtonMusic.png',
+    
+    }
+    
+    NewButton {
+        size = {72, 62},
+        pos = {55, 0},
+        image='buttonPrep.png',
+        clicked = function ()
+            GotoPagePre()
+        end
+    }
+    
+    NewButton {
+        size = {72, 62},
+        pos = {55+72, 0},
+        image='buttonNext.png',
+        clicked = function ()
+            GotoPageNext()
+        end
+    }    
+    
+    NewButton {
+        size = {108, 109},
+        pos = {55+72+72, 0},
+        image = 'buttonD1Gallery.png',
+    }
+
     NewLabel {
             text = "点击打开panel",
             size = { 200, 100 },
@@ -113,42 +158,43 @@ return function()
             fontSize = 20,
             clicked = function()
                 local _panel = NewPanel {
-    
+                    pos = {(768-626)/2, (1024-786)/2},
+                    size = {626, 786},
                 }
                 
-    
+                NewImage {
+                    image = 'subPageB',
+                    size = {626, 786},
+                    panel = _panel,
+                    pos = {626/2, 786/2},
+                }
 
-        NewLabel {
-            text = "点击访问百度",
-            size = { 200, 100 },
-            pos = { 300, 600 },
-            color = "black",
-            font = "SimSun",
-            fontSize = 20,
-            panel = _panel,
-            clicked = function()
-                print('click')
-                OpenUrl("http://www.baidu.com")
-            end,
+                NewLabel {
+                    text = "点击访问百度",
+                    size = { 200, 100 },
+                    pos = { 300, 600 },
+                    color = "black",
+                    font = "SimSun",
+                    fontSize = 20,
+                    panel = _panel,
+                    clicked = function()
+                        print('click')
+                        OpenUrl("http://www.baidu.com")
+                    end,
+                
+                }
+                
+                NewButton {
+                    image = "click_to_play.png",
+                    size = { 200, 100 },
+                    pos = { 40, 600 },
+                    panel = _panel,
+                    clicked = function() NewPhotoBrowser {
+                        images = {"car_002_1.jpg", "car_002_2.jpg", "car_002_3.jpg", "car_002_4.jpg"},
+                    } end,
+                }
+end,
     
-    }
-    
-    NewButton {
-        image = "click_to_play.png",
-        size = { 200, 100 },
-        pos = { 40, 600 },
-        panel = _panel,
-        clicked = function() NewPhotoBrowser {
-            images = {"photo1l.jpg", "photo2l.jpg", "photo3l.jpg", "photo4l.jpg"},
-        } end,
-    }
-
-
-
-            end,
-    
-    }
-
-    
-    
+}
+ 
 end

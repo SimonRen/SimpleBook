@@ -7,6 +7,33 @@
 --
 
 return function()
+        --按钮合集
+    NewButton {
+        name = 'button music',
+        size = {56, 55},
+        pos = {0, 0},
+        image = 'ButtonMusic.png',
+    
+    }
+    
+    NewButton {
+        size = {72, 62},
+        pos = {55, 0},
+        image='buttonPrep.png',
+        clicked = function ()
+            GotoPagePre()
+        end
+    }
+    
+    NewButton {
+        size = {72, 62},
+        pos = {55+72, 0},
+        image='buttonNext.png',
+        clicked = function ()
+            GotoPageNext()
+        end
+    }
+
     NewButton {
         size = {80,40},
         pos = {120,130},
