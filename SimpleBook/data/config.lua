@@ -9,3 +9,5 @@
 module "CFG"
 
 NOPRINT = false
+
+STAGE_NOCOVER = false

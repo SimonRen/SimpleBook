@@ -46,6 +46,8 @@ PreparePageData = function( pageData )
     end
 
     print( "pageData OK, count is " .. tostring(pageData:count()) )
+
+    CFG.STAGE_NOCOVER = false
 end
 
 PreparePageDataNoCover1 = function( pageData )
@@ -75,6 +77,8 @@ PreparePageDataNoCover1 = function( pageData )
     print( "pageData OK, count is " .. tostring(pageData:count()) )
     
     page_history = {}
+
+    CFG.STAGE_NOCOVER = true
 end
 
 --------------------------------------------------------------------------------

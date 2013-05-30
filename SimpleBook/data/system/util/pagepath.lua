@@ -8,6 +8,11 @@
 local rep = 'book.(%w+).(%w+)'
 PagepathToPage = function( pagepath )
     -- book.xxx.0001
+    local pageAdjust = 0
+
+    if CFG.STAGE_NOCOVER then
+        pageAdjust = 1
+    end
 
     local fun = string.gmatch( pagepath, rep )
     if not fun then return 0 end
@@ -18,9 +23,9 @@ PagepathToPage = function( pagepath )
 
     local config =
     {
-        cover = 0;
-        index = BOOK_COVER_PAGES,
-        content = BOOK_INDEX_PAGES + BOOK_COVER_PAGES,
+        cover = 0 - pageAdjust;
+        index = BOOK_COVER_PAGES - pageAdjust,
+        content = BOOK_INDEX_PAGES + BOOK_COVER_PAGES - pageAdjust,
     }
 
     local basepage = config[ part ]
