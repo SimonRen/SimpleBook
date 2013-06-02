@@ -32,6 +32,9 @@
         
         self.backgroundColor = [UIColor colorWithRed:255 green:0 blue:0 alpha:1];
         
+        self.showsVerticalScrollIndicator = NO;
+        self.showsHorizontalScrollIndicator = NO;
+        
     }
     return self;
 }

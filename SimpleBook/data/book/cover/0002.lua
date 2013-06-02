@@ -48,51 +48,7 @@ return function()
             end,
     
     }
-    
-    NewLabel {
-            text = "点击放音乐",
-            size = { 200, 100 },
-            pos = { 300, 640 },
-            color = "black",
-            font = "SimSun",
-            fontSize = 20,
-            panel = _panel,
-            clicked = function()
-                print('click')
-                StartPlayMusic("youreye.mp3")
-            end,
-    
-    }
-    
-     NewLabel {
-            text = "暂停播放音乐",
-            size = { 200, 100 },
-            pos = { 300, 800 },
-            color = "black",
-            font = "SimSun",
-            fontSize = 20,
-            panel = _panel,
-            clicked = function()
-                print('click')
-                PauseMusic()
-            end,
-    
-    }
-    
-    NewLabel {
-            text = "继续播放音乐",
-            size = { 200, 100 },
-            pos = { 100, 800 },
-            color = "black",
-            font = "SimSun",
-            fontSize = 20,
-            panel = _panel,
-            clicked = function()
-                print('click')
-                PlayMusic()
-            end,
-    
-    }
+
     
     --按钮合集
     NewButton {
