@@ -14,6 +14,16 @@ FontGet = function( name, size )
     if (loaded_font) then return loaded_font end
 
     local font = UIFont:fontWithName_size( NSStr(name), size )
+    --[[
+    if CFG.NOPRINT then
+        if not font then
+            print ('font not found: ' .. name .. '@' .. size )
+        else
+            print( 'font for ' .. name .. '@' .. size .. ' is:', font )
+        end
+    end
+    --]]
+
     font_cache[ loaded_id ] = font
 
     return font
