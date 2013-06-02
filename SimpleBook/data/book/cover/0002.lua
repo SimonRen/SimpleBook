@@ -154,6 +154,23 @@ return function()
                 
                   end,
     }
+    
+    NewButton {
+        size = {108, 107},
+        pos = {55+72+72+108+108+109, 0},
+        image = 'buttonVoice_a.png',
+        selected_image = 'buttonVoice_b.png',
+    
+        clicked = function(button)
+                     print(button:isSelected())
+                     button:setSelected(not (button:isSelected() == 1))
+                     
+                     if (button:isSelected() == 1) then
+                        --亮起来了
+                     
+                     end
+                  end,
+    }
 
     NewLabel {
             text = "点击打开panel",
