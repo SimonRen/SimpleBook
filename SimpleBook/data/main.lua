@@ -76,7 +76,7 @@ PreparePageDataNoCover1 = function( pageData )
 
     print( "pageData OK, count is " .. tostring(pageData:count()) )
     
-    page_history = {}
+    --page_history = {}
 
     CFG.STAGE_NOCOVER = true
 end
@@ -88,7 +88,15 @@ page_history = {}
 local is_goto_page = 0
 
 local curr_page_path = ""
-local curr_page_index = 0
+local curr_page_index = -1
+
+function check_page_history()
+    print('page_history begin')
+    for i, v in ipairs(page_history) do
+        print(v)
+    end
+    print('page_history end')
+end
 
 LoadPage = function(pagepath, view)
     if is_goto_page == 0 then
@@ -96,12 +104,15 @@ LoadPage = function(pagepath, view)
           if curr_page_path ~= "" then
             if (#page_history == 5) then
                 table.remove(page_history, 1)
+                print('remove--------------------------------------------------')
             end
         
             print("insert:"..curr_page_path)
             
-            if (curr_page_path ~= "") then
+            if (curr_page_path ~= "" and curr_page_path ~= 'book.cover.0001') then
                 table.insert(page_history, curr_page_path)
+                                    
+                check_page_history()
             end
           end
         
@@ -145,16 +156,22 @@ end
 
 GotoPagePre = function()
     local try_pre = 0
-    if curr_page_index == 0 then
+    if curr_page_index == -1 then
         try_pre = #page_history - 1
     else
         try_pre = curr_page_index - 1
     end
+    check_page_history()
 
     print("try_pre:"..tostring(try_pre)..'_'..tostring(page_history[try_pre]))
-    
+
+    if (try_pre < 1) then
+        return
+    end
+
+    curr_page_index = try_pre
+
     if page_history[try_pre] ~= nil then
-        curr_page_index = try_pre
         GotoPageNotRecord(page_history[curr_page_index])
     end
 end
@@ -162,10 +179,17 @@ end
 GotoPageNext = function()
     local try_next = curr_page_index + 1
     
+    check_page_history()
+    
     print("try_next:"..tostring(try_next)..'_'..tostring(page_history[try_next]))
+    
+    if (try_next > 5) then
+        return
+    end
+
+    curr_page_index = try_next
 
     if page_history[try_next] ~= nil then
-        curr_page_index = try_next
         GotoPageNotRecord(page_history[curr_page_index])
     end
 
