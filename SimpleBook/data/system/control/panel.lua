@@ -7,8 +7,11 @@ NewPanel = function( param )
     local w = param.size[1]
     local h = param.size[2]
     
+    local rw = param.rsize[1]
+    local rh = param.rsize[2]
+    
     local panel = SBPanel:alloc()
-    panel:initWithX_y_w_h(x, y, w, h)
+    panel:initWithX_y_w_h_rw_rh(x, y, w, h, rw, rh)
 
     ViewAdd(panel)
     return panel

@@ -72,7 +72,7 @@ return function()
             panel = _panel,
             clicked = function()
                 print('click')
-                PauseMusic("youreye.mp3")
+                PauseMusic()
             end,
     
     }
@@ -87,7 +87,7 @@ return function()
             panel = _panel,
             clicked = function()
                 print('click')
-                PlayMusic("youreye.mp3")
+                PlayMusic()
             end,
     
     }
@@ -98,6 +98,9 @@ return function()
         size = {56, 55},
         pos = {0, 0},
         image = 'ButtonMusic.png',
+        clicked = function()
+            StartPlayMusic("youreye.mp3")
+        end
     
     }
     
@@ -152,6 +155,25 @@ return function()
                 
                   end,
     }
+    
+    NewButton {
+        size = {108, 107},
+        pos = {55+72+72+108+108+109, 0},
+        image = 'buttonVoice_a.png',
+        selected_image = 'buttonVoice_b.png',
+    
+        clicked = function(button)
+                     print(button:isSelected())
+                     button:setSelected(not (button:isSelected() == 1))
+                     
+                     if (button:isSelected() == 1) then
+                        --亮起来了
+                        PlayMusic()
+                     else
+                        PauseMusic()
+                     end
+                  end,
+    }
 
     NewLabel {
             text = "点击打开panel",
@@ -164,6 +186,7 @@ return function()
                 local _panel = NewPanel {
                     pos = {(768-626)/2, (1024-786)/2},
                     size = {626, 786},
+                    rsize = {626, 786*2},
                 }
                 
                 NewImage {
@@ -191,7 +214,7 @@ return function()
                 NewButton {
                     image = "buttonD1Gallery.png",
                     size = { 108, 109 },
-                    pos = { 40, 600 },
+                    pos = { 40, 1000 },
                     panel = _panel,
                     clicked = function() NewPhotoBrowser {
                         images = {"car_002_1.jpg", "car_002_2.jpg", "car_002_3.jpg", "car_002_4.jpg"},

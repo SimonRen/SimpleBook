@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SBPanel : UIView
+@interface SBPanel : UIScrollView
 
 @end
