@@ -74,7 +74,7 @@ return function()
             panel = _panel,
             clicked = function()
                 print('click')
-                PauseMusic("youreye.mp3")
+                PauseMusic()
             end,
     
     }
@@ -89,7 +89,7 @@ return function()
             panel = _panel,
             clicked = function()
                 print('click')
-                PlayMusic("youreye.mp3")
+                PlayMusic()
             end,
     
     }
@@ -100,6 +100,9 @@ return function()
         size = {56, 55},
         pos = {0, 0},
         image = 'ButtonMusic.png',
+        clicked = function()
+            StartPlayMusic("youreye.mp3")
+        end
     
     }
     
@@ -167,7 +170,9 @@ return function()
                      
                      if (button:isSelected() == 1) then
                         --亮起来了
-                     
+                        PlayMusic()
+                     else
+                        PauseMusic()
                      end
                   end,
     }

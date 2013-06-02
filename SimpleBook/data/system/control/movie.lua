@@ -38,13 +38,17 @@ StartPlayMusic = function(path)
     StopMusic()
     local data = NSData:dataWithContentsOfFile(NSStr("data/book/misc/"..path))
     
-    print(AVAudioPlayer)
+    if (data ~= nil) then
     
-    player = AVAudioPlayer:alloc()
+        print(AVAudioPlayer)
     
-    player:initWithData_error(data, nil)
+        player = AVAudioPlayer:alloc()
     
-    player:play()
+        player:initWithData_error(data, nil)
+    
+        player:play()
+    
+    end
 
 end
 
