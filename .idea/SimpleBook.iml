@@ -40,6 +40,9 @@
     <content url="file://$MODULE_DIR$/SimpleBook/SimpleBook.xcodeproj">
       <sourceFolder url="file://$MODULE_DIR$/SimpleBook/SimpleBook.xcodeproj" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/SimpleBook/SimpleBook/MWPhotoBrowser">
+      <sourceFolder url="file://$MODULE_DIR$/SimpleBook/SimpleBook/MWPhotoBrowser" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

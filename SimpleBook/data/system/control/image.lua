@@ -54,4 +54,31 @@ NewImage = function( param )
     end
 
     ViewAdd(imageview, param.panel)
+
+    return imageview
+end
+
+ChangeImage = function( imageview, param )
+    local image = UIImage:imageNamed( NSStr("data/book/images/"..param.image) )
+
+    if (param.size or param.scale) then
+        local scaled_size = CGSize( unpack(param.size or {0,0}) )
+
+        if param.scale then
+            scaled_size = CGSize( scaled_size.width * param.scale, scaled_size.height * param.scale )
+        end
+
+        UIGraphicsBeginImageContext( scaled_size )
+        image:drawInRect( CGRect( CGPoint(0,0), scaled_size ) )
+        local scaled_image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        image = scaled_image
+    end
+
+    if param.orientation and orientation ~= 'up' then
+    end
+
+    imageview:setImage( image )
+    imageview:setCenter( CGPoint(unpack(param.pos)) )
 end
