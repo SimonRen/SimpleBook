@@ -188,6 +188,7 @@ return function()
                 local _panel = NewPanel {
                     pos = {(768-626)/2, (1024-786)/2},
                     size = {626, 786},
+                    rsize = {626, 786*2},
                 }
                 
                 NewImage {
@@ -215,7 +216,7 @@ return function()
                 NewButton {
                     image = "buttonD1Gallery.png",
                     size = { 108, 109 },
-                    pos = { 40, 600 },
+                    pos = { 40, 1000 },
                     panel = _panel,
                     clicked = function() NewPhotoBrowser {
                         images = {"car_002_1.jpg", "car_002_2.jpg", "car_002_3.jpg", "car_002_4.jpg"},

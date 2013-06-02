@@ -19,11 +19,18 @@
     return self;
 }
 
-- (id)initWithX: (CGFloat)valuex y:(CGFloat)valuey w:(CGFloat)valuew h:(CGFloat)valueh
+- (id)initWithX: (CGFloat)valuex y:(CGFloat)valuey w:(CGFloat)valuew h:(CGFloat)valueh rw:(CGFloat)rvaluew rh:(CGFloat)rvalueh
 {
     self = [super initWithFrame:CGRectMake(valuex, valuey, valuew, valueh)];
     if (self) {
-        self.backgroundColor = [UIColor colorWithRed:255 green:0 blue:0 alpha:0];
+        self.pagingEnabled = YES;
+        self.scrollEnabled = YES;
+        
+        CGSize newSize = CGSizeMake(rvaluew, rvalueh);
+        
+        [self setContentSize:newSize];
+        
+        self.backgroundColor = [UIColor colorWithRed:255 green:0 blue:0 alpha:1];
         
     }
     return self;
