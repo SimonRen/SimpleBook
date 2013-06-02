@@ -145,6 +145,15 @@ return function()
         
         end
     }
+    
+    NewButton {
+        size = {109, 109},
+        pos = {55+72+72+108 + 108, 0},
+        image = 'buttonB5Step.png',
+        clicked = function() 
+                
+                  end,
+    }
 
     NewLabel {
             text = "点击打开panel",
