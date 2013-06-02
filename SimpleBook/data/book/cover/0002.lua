@@ -17,13 +17,11 @@ return function()
     }
 
     NewLabel {
-        text = "点击可跳到下一页",
+        text = "Click To Jump 下一页",
         size = { 200, 100 },
         pos = { 40, 60 },
-        color = "black",
-        font = "SimSun",
-        fontSize = 20,
-        clicked = function() 
+        style = "default_style",
+        clicked = function()
             print('goto page')
             GotoPage('book.content.0001') 
         end,

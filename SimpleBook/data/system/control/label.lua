@@ -8,6 +8,9 @@
 
 --[[
 
+Full IOS font list:
+http://iosfonts.com/
+
 param = {
     text = "abc",
     size = {10,20},
@@ -28,6 +31,15 @@ param = {
 --]]
 
 NewLabel = function( param )
+
+    if param.style then
+        meta = {
+            __index = GetLabelStyle(param.style)
+        }
+
+        setmetatable( param, meta )
+    end
+
     local label = UILabel:alloc():initWithFrame( CGRect( CGPoint(unpack(param.pos)), CGSize(unpack(param.size)) ) )
     label.numberOfLines = 0
     label.lineBreakMode = UILineBreakModeWordWrap
